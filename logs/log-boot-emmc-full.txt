@@ -1,0 +1,562 @@
+dainius@server:~$ grabserial -v -d "/dev/ttyUSB0" -b 115200 -w 8 -p N -s 1 -e 60 -t -m "U-Boot" 
+Opening serial port /dev/ttyUSB0
+115200:8N1:xonxoff=0:rtscts=0
+Program will end in 60 seconds
+Printing timing information for each line
+Matching pattern 'U-Boot' to set base time
+Use Control-C to stop...
+[0.000000 0.000000] 
+[2.935608 2.935608] U-Boot SPL 2015.01-00001-gb2412df (Jan 29 2015 - 15:01:06)
+[1.697175 1.697175] 
+[1.697331 0.000156] 
+[1.697638 0.000307] U-Boot 2015.01-00001-gb2412df (Jan 29 2015 - 15:01:06), Build: jenkins-github_Bootloader-Builder-105
+[0.008763 0.008763] 
+[0.008904 0.000141]        Watchdog enabled
+[0.011276 0.002372] I2C:   ready
+[0.064766 0.053490] DRAM:  512 MiB
+[0.419356 0.354590] MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+[0.422533 0.003177] Using default environment
+[0.424914 0.002381] 
+[0.510589 0.085675] Net:   <ethaddr> not set. Validating first E-fuse MAC
+[0.567793 0.057204] cpsw
+[0.568748 0.000955] Hit any key to stop autoboot:  0 
+[1.575467 1.006719] gpio: pin 53 (gpio 53) value is 1
+[1.602590 0.027123] Card did not respond to voltage select!
+[1.615082 0.012492] Card did not respond to voltage select!
+[1.618700 0.003618] gpio: pin 56 (gpio 56) value is 0
+[1.621708 0.003008] gpio: pin 55 (gpio 55) value is 0
+[1.624819 0.003111] gpio: pin 54 (gpio 54) value is 0
+[1.686967 0.062148] switch to partitions #0, OK
+[1.689338 0.002371] mmc1(part 0) is current device
+[1.750211 0.060873] gpio: pin 54 (gpio 54) value is 1
+[1.757963 0.007752] Checking for: /uEnv.txt ...
+[1.765126 0.007163] Checking for: /boot.scr ...
+[1.772476 0.007350] Checking for: /boot/boot.scr ...
+[1.779977 0.007501] Checking for: /boot/uEnv.txt ...
+[1.820359 0.040382] gpio: pin 55 (gpio 55) value is 1
+[1.856591 0.036232] 855 bytes read in 28 ms (29.3 KiB/s)
+[1.860208 0.003617] Loaded environment from /boot/uEnv.txt
+[1.863957 0.003749] Checking if uname_r is set in /boot/uEnv.txt...
+[1.868456 0.004499] gpio: pin 56 (gpio 56) value is 1
+[1.871464 0.003008] Running uname_boot ...
+[1.914239 0.042775] loading /boot/vmlinuz-3.8.13-bone70 ...
+[2.267607 0.353368] 5617184 bytes read in 344 ms (15.6 MiB/s)
+[2.311484 0.043877] loading /boot/dtbs/3.8.13-bone70/am335x-boneblack.dtb ...
+[2.360106 0.048622] 26098 bytes read in 39 ms (653.3 KiB/s)
+[2.401234 0.041128] loading /boot/initrd.img-3.8.13-bone70 ...
+[2.601484 0.200250] 2867606 bytes read in 191 ms (14.3 MiB/s)
+[2.607823 0.006339] debug: [console=ttyO0,115200n8 root=UUID=e0fa6375-809e-44e7-b8b9-2da1372a7f94 ro rootfstype=ext4 rootwait fixrtc init=/lib/systemd/systemd] ...
+[2.620978 0.013155] debug: [bootz 0x82000000 0x88080000:2bc196 0x88000000] ...
+[2.627368 0.006390] Kernel image @ 0x82000000 [ 0x000000 - 0x55b620 ]
+[2.631732 0.004364] ## Flattened Device Tree blob at 88000000
+[2.635490 0.003758]    Booting using the fdt blob at 0x88000000
+[2.639604 0.004114]    Loading Ramdisk to 8fd43000, end 8ffff196 ... OK
+[2.668498 0.028894]    Loading Device Tree to 8fd39000, end 8fd425f1 ... OK
+[2.674869 0.006371] 
+[2.675120 0.000251] Starting kernel ...
+[2.676994 0.001874] 
+[2.682385 0.005391] Uncompressing Linux... done, booting the kernel.
+[3.443437 0.761052] [    0.000000] Booting Linux on physical CPU 0x0
+[3.448012 0.004575] [    0.000000] Initializing cgroup subsys cpu
+[3.452264 0.004252] [    0.000000] Linux version 3.8.13-bone70 (root@a5-imx6q-wandboard-2gb) (gcc version 4.6.3 (Debian 4.6.3-14) ) #1 SMP Fri Jan 23 02:15:42 UTC 2015
+[3.465771 0.013507] [    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=50c5387d
+[3.473060 0.007289] [    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[3.481145 0.008085] [    0.000000] Machine: Generic AM33XX (Flattened Device Tree), model: TI AM335x BeagleBone
+[3.489511 0.008366] [    0.000000] Memory policy: ECC disabled, Data cache writeback
+[3.495522 0.006011] [    0.000000] AM335X ES2.1 (l2cache sgx neon )
+[3.500020 0.004498] [    0.000000] PERCPU: Embedded 9 pages/cpu @c0d4e000 s14080 r8192 d14592 u36864
+[3.507386 0.007366] [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129792
+[3.515757 0.008371] [    0.000000] Kernel command line: console=ttyO0,115200n8 root=UUID=e0fa6375-809e-44e7-b8b9-2da1372a7f94 ro rootfstype=ext4 rootwait fixrtc init=/lib/systemd/systemd
+[3.531056 0.015299] [    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[3.537147 0.006091] [    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[3.544396 0.007249] [    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[3.551635 0.007239] [    0.000000] __ex_table already sorted, skipping sort
+[3.556761 0.005126] [    0.000000] allocated 1048576 bytes of page_cgroup
+[3.561772 0.005011] [    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[3.570063 0.008291] [    0.000000] Memory: 511MB = 511MB total
+[3.574049 0.003986] [    0.000000] Memory: 505344k/505344k available, 18944k reserved, 0K highmem
+[3.581263 0.007214] [    0.000000] Virtual kernel memory layout:
+[3.585388 0.004125] [    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[3.591399 0.006011] [    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[3.597302 0.005903] [    0.000000]     vmalloc : 0xe0800000 - 0xff000000   ( 488 MB)
+[3.603263 0.005961] [    0.000000]     lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+[3.609262 0.005999] [    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[3.615275 0.006013] [    0.000000]     modules : 0xbf800000 - 0xbfe00000   (   6 MB)
+[3.621262 0.005987] [    0.000000]       .text : 0xc0008000 - 0xc07fda30   (8151 kB)
+[3.627278 0.006016] [    0.000000]       .init : 0xc07fe000 - 0xc083b700   ( 246 kB)
+[3.633189 0.005911] [    0.000000]       .data : 0xc083c000 - 0xc08c3980   ( 543 kB)
+[3.639137 0.005948] [    0.000000]        .bss : 0xc08c3980 - 0xc093d140   ( 486 kB)
+[3.645142 0.006005] [    0.000000] Hierarchical RCU implementation.
+[3.649642 0.004500] [    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[3.656027 0.006385] [    0.000000] NR_IRQS:0 nr_irqs:0 0
+[3.659392 0.003365] [    0.000000] IRQ: Found an INTC at 0xfa200000 (revision 5.0) with 128 interrupts
+[3.667051 0.007659] [    0.000000] Total of 128 interrupts on 1 active controller
+[3.672782 0.005731] [    0.000000] OMAP clockevent source: GPTIMER1 at 24000000 Hz
+[3.678531 0.005749] [    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+[3.686279 0.007748] [    0.000000] OMAP clocksource: GPTIMER2 at 24000000 Hz
+[3.691514 0.005235] [    0.000000] Console: colour dummy device 80x30
+[3.696153 0.004639] [    0.000243] Calibrating delay loop... 993.47 BogoMIPS (lpj=969728)
+[3.702641 0.006488] [    0.029189] pid_max: default: 32768 minimum: 301
+[3.707391 0.004750] [    0.029325] Security Framework initialized
+[3.711676 0.004285] [    0.029380] Mount-cache hash table entries: 512
+[3.716390 0.004714] [    0.035112] Initializing cgroup subsys cpuacct
+[3.721064 0.004674] [    0.035134] Initializing cgroup subsys memory
+[3.725654 0.004590] [    0.035175] Initializing cgroup subsys blkio
+[3.730064 0.004410] [    0.035259] CPU: Testing write buffer coherency: ok
+[3.735155 0.005091] [    0.035640] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[3.740531 0.005376] [    0.035695] Setting up static identity map for 0x804d4d08 - 0x804d4d54
+[3.747269 0.006738] [    0.036610] Brought up 1 CPUs
+[3.750391 0.003122] [    0.036624] SMP: Total of 1 processors activated (993.47 BogoMIPS).
+[3.757036 0.006645] [    0.037407] devtmpfs: initialized
+[3.760396 0.003360] [    0.045751] omap_hwmod: wd_timer2: _wait_target_disable failed
+[3.766520 0.006124] [    0.097889] pinctrl core: initialized pinctrl subsystem
+[3.772018 0.005498] [    0.098022] rstctl core: initialized rstctl subsystem
+[3.777185 0.005167] [    0.098297] regulator-dummy: no parameters
+[3.781411 0.004226] [    0.098613] NET: Registered protocol family 16
+[3.786144 0.004733] [    0.099137] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[3.793270 0.007126] [    0.104722] pinctrl-single 44e10800.pinmux: 142 pins at pa f9e10800 size 568
+[3.800646 0.007376] [    0.105277] platform 49000000.edma: alias fck already exists
+[3.806516 0.005870] [    0.105294] platform 49000000.edma: alias fck already exists
+[3.812391 0.005875] [    0.105307] platform 49000000.edma: alias fck already exists
+[3.818271 0.005880] [    0.106056] OMAP GPIO hardware version 0.1
+[3.822642 0.004371] [    0.108557] gpio-rctrl rstctl.4: loaded OK
+[3.826896 0.004254] [    0.111894] No ATAGs?
+[3.829272 0.002376] [    0.111911] hw-breakpoint: debug architecture 0x4 unsupported.
+[3.835304 0.006032] [    0.113132] cpsw.0: No hwaddr in dt. Using 68:c9:0b:da:07:6e from efuse
+[3.842277 0.006973] [    0.113150] cpsw.1: No hwaddr in dt. Using 68:c9:0b:da:07:70 from efuse
+[3.849151 0.006874] [    0.121236] bio: create slab <bio-0> at 0
+[3.853273 0.004122] [    0.127467] edma-dma-engine edma-dma-engine.0: TI EDMA DMA engine driver
+[3.860268 0.006995] [    0.127734] vmmcsd_fixed: 3300 mV 
+[3.863814 0.003546] [    0.129324] SCSI subsystem initialized
+[3.867773 0.003959] [    0.129552] usbcore: registered new interface driver usbfs
+[3.873399 0.005626] [    0.129612] usbcore: registered new interface driver hub
+[3.879024 0.005625] [    0.129819] usbcore: registered new device driver usb
+[3.884271 0.005247] [    0.131063] omap_i2c 44e0b000.i2c: bus 0 rev0.11 at 400 kHz
+[3.890081 0.005810] [    0.131949] input: tps65217_pwr_but as /devices/ocp.3/44e0b000.i2c/i2c-0/0-0024/input/input0
+[3.898895 0.008814] [    0.133571] DCDC1: at 1500 mV 
+[3.902069 0.003174] [    0.134394] vdd_mpu: 925 <--> 1325 mV at 1325 mV 
+[3.907024 0.004955] [    0.135235] vdd_core: 925 <--> 1150 mV at 1125 mV 
+[3.912024 0.005000] [    0.136037] LDO1: at 1800 mV 
+[3.915069 0.003045] [    0.136823] LDO2: at 3300 mV 
+[3.918148 0.003079] [    0.138300] LDO3: 1800 mV 
+[3.921024 0.002876] [    0.139145] LDO4: at 3300 mV 
+[3.924072 0.003048] [    0.139855] tps65217 0-0024: TPS65217 ID 0xe version 1.2
+[3.929581 0.005509] [    0.140308] omap_i2c 44e0b000.i2c: unable to select pin group
+[3.935534 0.005953] [    0.140813] omap_i2c 4819c000.i2c: bus 1 rev0.11 at 100 kHz
+[3.941399 0.005865] [    0.142130] omap_i2c 4819c000.i2c: unable to select pin group
+[3.947400 0.006001] [    0.142272] media: Linux media interface: v0.10
+[3.952150 0.004750] [    0.142332] Linux video capture interface: v2.00
+[3.957035 0.004885] [    0.142399] pps_core: LinuxPPS API ver. 1 registered
+[3.962171 0.005136] [    0.142407] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[3.971660 0.009489] [    0.142431] PTP clock support registered
+[3.975702 0.004042] [    0.142899] Advanced Linux Sound Architecture Driver Initialized.
+[3.982076 0.006374] [    0.143480] NetLabel: Initializing
+[3.985651 0.003575] [    0.143490] NetLabel:  domain hash size = 128
+[3.990151 0.004500] [    0.143496] NetLabel:  protocols = UNLABELED CIPSOv4
+[3.995288 0.005137] [    0.143562] NetLabel:  unlabeled traffic allowed by default
+[4.001150 0.005862] [    0.143741] Switching to clocksource gp_timer
+[4.005649 0.004499] [    0.175095] NET: Registered protocol family 2
+[4.010201 0.004552] [    0.175723] TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+[4.017525 0.007324] [    0.175804] TCP bind hash table entries: 4096 (order: 4, 81920 bytes)
+[4.024279 0.006754] [    0.175886] TCP: Hash tables configured (established 4096 bind 4096)
+[4.030902 0.006623] [    0.175947] TCP: reno registered
+[4.034277 0.003375] [    0.175961] UDP hash table entries: 256 (order: 1, 12288 bytes)
+[4.040400 0.006123] [    0.175985] UDP-Lite hash table entries: 256 (order: 1, 12288 bytes)
+[4.047079 0.006679] [    0.176213] NET: Registered protocol family 1
+[4.051651 0.004572] [    0.176602] RPC: Registered named UNIX socket transport module.
+[4.057777 0.006126] [    0.176615] RPC: Registered udp transport module.
+[4.062651 0.004874] [    0.176622] RPC: Registered tcp transport module.
+[4.067579 0.004928] [    0.176629] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[4.074298 0.006719] [    0.176852] Trying to unpack rootfs image as initramfs...
+[4.080041 0.005743] [    0.371785] Freeing initrd memory: 2800K
+[4.084074 0.004033] [    0.372094] hw perfevents: enabled with ARMv7 Cortex-A8 PMU driver, 5 counters available
+[4.092447 0.008373] [    0.372443] CPU PMU: attempt to register multiple PMU devices!
+[4.098530 0.006083] [    0.372470] arm-pmu: probe of arm-pmu failed with error -28
+[4.104405 0.005875] [    0.372768] omap2_mbox_probe: platform not supported
+[4.109538 0.005133] [    0.523101] VFS: Disk quotas dquot_6.5.2
+[4.113653 0.004115] [    0.523239] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[4.120405 0.006752] [    0.523952] NFS: Registering the id_resolver key type
+[4.125655 0.005250] [    0.524026] Key type id_resolver registered
+[4.130079 0.004424] [    0.524035] Key type id_legacy registered
+[4.134290 0.004211] [    0.524306] fuse init (API version 7.20)
+[4.138277 0.003987] [    0.524762] Btrfs loaded
+[4.141041 0.002764] [    0.524866] msgmni has been set to 992
+[4.144913 0.003872] [    0.526472] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[4.152580 0.007667] [    0.526487] io scheduler noop registered
+[4.156653 0.004073] [    0.526495] io scheduler deadline registered
+[4.161167 0.004514] [    0.526517] io scheduler cfq registered (default)
+[4.166069 0.004902] [    0.527737] tps65217-bl tps65217-bl: no platform data provided
+[4.172157 0.006088] [    0.527764] tps65217-bl: probe of tps65217-bl failed with error -22
+[4.178655 0.006498] [    0.528278] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[4.185172 0.006517] [    0.529658] omap_uart 44e09000.serial: did not get pins for uart0 error: -19
+[4.192529 0.007357] [    0.529934] 44e09000.serial: ttyO0 at MMIO 0x44e09000 (irq = 72) is a OMAP UART0
+[4.200280 0.007751] [    1.286987] console [ttyO0] enabled
+[4.204661 0.004381] [    1.291287] [drm] Initialized drm 1.1.0 20060810
+[4.216660 0.011999] [    1.303383] brd: module loaded
+[4.223670 0.007010] [    1.310287] loop: module loaded
+[4.227035 0.003365] [    1.313655] at24 0-0050: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[4.234155 0.007120] [    1.320882] at24 1-0054: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[4.241409 0.007254] [    1.328097] at24 1-0055: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[4.248666 0.007257] [    1.335300] at24 1-0056: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[4.255782 0.007116] [    1.342510] at24 1-0057: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[4.269669 0.013887] [    1.356383] bone-capemgr bone_capemgr.9: Baseboard: 'A335BNLT,00C0,4215BBBK018F'
+[4.277533 0.007864] [    1.364170] bone-capemgr bone_capemgr.9: compatible-baseboard=ti,beaglebone-black
+[4.315051 0.037518] [    1.401630] bone-capemgr bone_capemgr.9: slot #0: No cape found
+[4.352064 0.037013] [    1.438737] bone-capemgr bone_capemgr.9: slot #1: No cape found
+[4.389176 0.037112] [    1.475846] bone-capemgr bone_capemgr.9: slot #2: No cape found
+[4.426299 0.037123] [    1.512956] bone-capemgr bone_capemgr.9: slot #3: No cape found
+[4.432423 0.006124] [    1.519157] bone-capemgr bone_capemgr.9: slot #4: specific override
+[4.439051 0.006628] [    1.525720] bone-capemgr bone_capemgr.9: bone: Using override eeprom data at slot 4
+[4.447041 0.007990] [    1.533727] bone-capemgr bone_capemgr.9: slot #4: 'Bone-LT-eMMC-2G,00A0,Texas Instrument,BB-BONE-EMMC-2G'
+[4.457059 0.010018] [    1.543776] bone-capemgr bone_capemgr.9: slot #5: specific override
+[4.463667 0.006608] [    1.550331] bone-capemgr bone_capemgr.9: bone: Using override eeprom data at slot 5
+[4.471667 0.008000] [    1.558330] bone-capemgr bone_capemgr.9: slot #5: 'Bone-Black-HDMI,00A0,Texas Instrument,BB-BONELT-HDMI'
+[4.481678 0.010011] [    1.568296] bone-capemgr bone_capemgr.9: slot #6: specific override
+[4.488194 0.006516] [    1.574855] bone-capemgr bone_capemgr.9: bone: Using override eeprom data at slot 6
+[4.496191 0.007997] [    1.582851] bone-capemgr bone_capemgr.9: slot #6: 'Bone-Black-HDMIN,00A0,Texas Instrument,BB-BONELT-HDMIN'
+[4.506554 0.010363] [    1.593248] bone-capemgr bone_capemgr.9: loader: before slot-4 BB-BONE-EMMC-2G:00A0 (prio 1)
+[4.515418 0.008864] [    1.602076] bone-capemgr bone_capemgr.9: loader: check slot-4 BB-BONE-EMMC-2G:00A0 (prio 1)
+[4.524179 0.008761] [    1.610860] bone-capemgr bone_capemgr.9: loader: before slot-5 BB-BONELT-HDMI:00A0 (prio 1)
+[4.532929 0.008750] [    1.619592] bone-capemgr bone_capemgr.9: loader: check slot-5 BB-BONELT-HDMI:00A0 (prio 1)
+[4.541545 0.008616] [    1.628239] bone-capemgr bone_capemgr.9: initialized OK.
+[4.547085 0.005540] [    1.633800] bone-capemgr bone_capemgr.9: loader: before slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[4.555921 0.008836] [    1.642616] bone-capemgr bone_capemgr.9: loader: check slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[4.566047 0.010126] [    1.652794] OneNAND driver initializing
+[4.571048 0.005001] [    1.657733] usbcore: registered new interface driver cdc_ether
+[4.577172 0.006124] [    1.663871] bone-capemgr bone_capemgr.9: loader: after slot-4 BB-BONE-EMMC-2G:00A0 (prio 1)
+[4.586044 0.008872] [    1.672646] usbcore: registered new interface driver rndis_host
+[4.592186 0.006142] [    1.678876] bone-capemgr bone_capemgr.9: loader: after slot-5 BB-BONELT-HDMI:00A0 (prio 1)
+[4.600793 0.008607] [    1.687528] bone-capemgr bone_capemgr.9: loader: check slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[4.609671 0.008878] [    1.696323] usbcore: registered new interface driver cdc_ncm
+[4.615548 0.005877] [    1.702262] bone-capemgr bone_capemgr.9: slot #4: Requesting firmware 'cape-bone-2g-emmc1.dtbo' for board-name 'Bone-LT-eMMC-2G', version '00A0'
+[4.629548 0.014000] [    1.716260] usbcore: registered new interface driver cdc_acm
+[4.635571 0.006023] [    1.722181] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[4.643798 0.008227] [    1.730529] Initializing USB Mass Storage driver...
+[4.649044 0.005246] [    1.735636] bone-capemgr bone_capemgr.9: slot #4: dtbo 'cape-bone-2g-emmc1.dtbo' loaded; converting to live tree
+[4.659554 0.010510] [    1.746285] bone-capemgr bone_capemgr.9: slot #5: Requesting firmware 'cape-boneblack-hdmi-00A0.dtbo' for board-name 'Bone-Black-HDMI', version '00A0'
+[4.673670 0.014116] [    1.760401] usbcore: registered new interface driver usb-storage
+[4.680044 0.006374] [    1.766673] USB Mass Storage support registered.
+[4.685051 0.005007] [    1.771692] bone-capemgr bone_capemgr.9: slot #4: #2 overlays
+[4.691550 0.006499] [    1.778275] bone-capemgr bone_capemgr.9: slot #4: Applied #2 overlays.
+[4.698434 0.006884] [    1.785136] bone-capemgr bone_capemgr.9: loader: done slot-4 BB-BONE-EMMC-2G:00A0 (prio 1)
+[4.707173 0.008739] [    1.793807] bone-capemgr bone_capemgr.9: loader: check slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[4.715937 0.008764] [    1.802557] bone-capemgr bone_capemgr.9: slot #5: dtbo 'cape-boneblack-hdmi-00A0.dtbo' loaded; converting to live tree
+[4.727175 0.011238] [    1.813879] musb-hdrc: version 6.0, ?dma?, otg (peripheral+host)
+[4.733685 0.006510] [    1.820424] musb-hdrc musb-hdrc.0.auto: pdev->id = 0
+[4.739060 0.005375] [    1.825636] musb-hdrc musb-hdrc.0.auto: drivers/usb/musb/musb_dsps.c:480 dsps_musb_init: OK
+[4.748183 0.009123] [    1.834918] bone-capemgr bone_capemgr.9: slot #5: #4 overlays
+[4.755686 0.007503] [    1.842368] platform 4830e000.fb: alias fck already exists
+[4.761683 0.005997] [    1.848335] musb-hdrc musb-hdrc.0.auto: *** mode=3
+[4.766674 0.004991] [    1.853385] musb-hdrc musb-hdrc.0.auto: *** power=250
+[4.772937 0.006263] [    1.859621] bone-capemgr bone_capemgr.9: slot #5: Applied #4 overlays.
+[4.779800 0.006863] [    1.866502] bone-capemgr bone_capemgr.9: loader: done slot-5 BB-BONELT-HDMI:00A0 (prio 1)
+[4.788427 0.008627] [    1.875062] bone-capemgr bone_capemgr.9: loader: check slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[4.797554 0.009127] [    1.884253] musb-hdrc musb-hdrc.1.auto: pdev->id = 1
+[4.802802 0.005248] [    1.889464] musb-hdrc musb-hdrc.1.auto: drivers/usb/musb/musb_dsps.c:480 dsps_musb_init: OK
+[4.811561 0.008759] [    1.898265] bone-capemgr bone_capemgr.9: loader: after slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[4.820440 0.008879] [    1.907140] musb-hdrc musb-hdrc.1.auto: *** mode=1
+[4.825428 0.004988] [    1.912165] musb-hdrc musb-hdrc.1.auto: *** power=250
+[4.830696 0.005268] [    1.917446] musb-hdrc musb-hdrc.1.auto: MUSB HDRC host driver
+[4.836803 0.006107] [    1.923472] bone-capemgr bone_capemgr.9: slot #6: Requesting firmware 'cape-boneblack-hdmin-00A0.dtbo' for board-name 'Bone-Black-HDMIN', version '00A0'
+[4.851314 0.014511] [    1.937957] musb-hdrc musb-hdrc.1.auto: new USB bus registered, assigned bus number 1
+[4.859554 0.008240] [    1.946303] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[4.866692 0.007138] [    1.953408] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[4.874213 0.007521] [    1.960949] usb usb1: Product: MUSB HDRC host driver
+[4.879429 0.005216] [    1.966132] usb usb1: Manufacturer: Linux 3.8.13-bone70 musb-hcd
+[4.885692 0.006263] [    1.972400] usb usb1: SerialNumber: musb-hdrc.1.auto
+[4.890930 0.005238] [    1.977627] bone-capemgr bone_capemgr.9: slot #6: dtbo 'cape-boneblack-hdmin-00A0.dtbo' loaded; converting to live tree
+[4.902817 0.011887] [    1.989483] hub 1-0:1.0: USB hub found
+[4.906816 0.003999] [    1.993455] hub 1-0:1.0: 1 port detected
+[4.911061 0.004245] [    1.997761] bone-capemgr bone_capemgr.9: slot #6: BB-BONELT-HDMIN conflict P8.45 (#5:BB-BONELT-HDMI)
+[4.920682 0.009621] [    2.007340] bone-capemgr bone_capemgr.9: slot #6: Failed verification
+[4.927305 0.006623] [    2.014072] bone-capemgr bone_capemgr.9: loader: failed to load slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[4.937936 0.010631] [    2.024617] mousedev: PS/2 mouse device common for all mice
+[4.945437 0.007501] [    2.032081] omap_rtc 44e3e000.rtc: rtc core: registered 44e3e000.rtc as rtc0
+[4.953059 0.007622] [    2.039781] i2c /dev entries driver
+[4.957818 0.004759] [    2.044507] pps_ldisc: PPS line discipline registered
+[4.963182 0.005364] [    2.049922] Driver for 1-wire Dallas network protocol.
+[4.969864 0.006682] [    2.056470] omap_wdt: OMAP Watchdog Timer Rev 0x01: initial timeout 60 sec
+[4.977447 0.007583] [    2.064107] device-mapper: ioctl: 4.23.1-ioctl (2012-12-18) initialised: dm-devel@redhat.com
+[4.986320 0.008873] [    2.072989] cpuidle: using governor ladder
+[4.990561 0.004241] [    2.077300] cpuidle: using governor menu
+[4.995075 0.004514] [    2.081698] omap_hsmmc mmc.5: of_parse_phandle_with_args of 'reset' failed
+[5.002186 0.007111] [    2.088892] omap_hsmmc mmc.5: Failed to get rstctl; not using any
+[5.008817 0.006631] [    2.095560] edma-dma-engine edma-dma-engine.0: allocated channel for 0:25
+[5.016072 0.007255] [    2.102709] edma-dma-engine edma-dma-engine.0: allocated channel for 0:24
+[5.023322 0.007250] [    2.109955] mmc.5 supply vmmc_aux not found, using dummy regulator
+[5.030059 0.006737] [    2.116749] omap_hsmmc mmc.5: pins are not configured from the driver
+[5.063236 0.033177] [    2.149901] gpio-rctrl rstctl.4: gpio_rctrl_request eMMC_RSTn
+[5.069313 0.006077] [    2.156009] omap_hsmmc mmc.11: Got rstctl (gpio:#0 name eMMC_RSTn) label:eMMC_RSTn
+[5.077189 0.007876] [    2.163918] gpio-rctrl rstctl.4: gpio_rctrl_deassert eMMC_RSTn
+[5.083575 0.006386] [    2.170221] edma-dma-engine edma-dma-engine.0: allocated channel for 0:3
+[5.090564 0.006989] [    2.177275] edma-dma-engine edma-dma-engine.0: allocated channel for 0:2
+[5.097950 0.007386] [    2.184604] mmc.11 supply vmmc_aux not found, using dummy regulator
+[5.104564 0.006614] [    2.191258] omap_hsmmc mmc.11: pins are not configured from the driver
+[5.137508 0.032944] [    2.224175] pinctrl-single 44e10800.pinmux: pin 44e10854 already requested by 44e10800.pinmux; cannot claim for gpio-leds.8
+[5.149195 0.011687] [    2.235857] pinctrl-single 44e10800.pinmux: pin-21 (gpio-leds.8) status -22
+[5.156441 0.007246] [    2.243120] pinctrl-single 44e10800.pinmux: could not request pin 21 on device pinctrl-single
+[5.165321 0.008880] [    2.252046] leds-gpio gpio-leds.8: pins are not configured from the driver
+[5.173319 0.007998] [    2.260066] ledtrig-cpu: registered to indicate activity on CPUs
+[5.179941 0.006622] [    2.266640] edma-dma-engine edma-dma-engine.0: allocated channel for 0:36
+[5.187066 0.007125] [    2.273821] omap-sham 53100000.sham: hw accel on OMAP rev 4.3
+[5.194459 0.007393] [    2.281167] omap-aes 53500000.aes: OMAP AES hw accel rev: 3.2
+[5.200703 0.006244] [    2.287376] edma-dma-engine edma-dma-engine.0: allocated channel for 0:5
+[5.207828 0.007125] [    2.294496] edma-dma-engine edma-dma-engine.0: allocated channel for 0:6
+[5.217706 0.009878] [    2.304435] usbcore: registered new interface driver usbhid
+[5.223565 0.005859] [    2.310330] usbhid: USB HID core driver
+[5.228579 0.005014] [    2.315288] ashmem: initialized
+[5.232204 0.003625] [    2.318907] logger: created 256K log 'log_main'
+[5.237202 0.004998] [    2.323903] logger: created 256K log 'log_events'
+[5.242454 0.005252] [    2.329094] logger: created 256K log 'log_radio'
+[5.247453 0.004999] [    2.334191] logger: created 256K log 'log_system'
+[5.255080 0.007627] [    2.341792] davinci_evm sound.14:  nxp-hdmi-hifi <-> 48038000.mcasp mapping ok
+[5.264705 0.009625] [    2.351381] TCP: cubic registered
+[5.268323 0.003618] [    2.354973] NET: Registered protocol family 10
+[5.273694 0.005371] [    2.360429] NET: Registered protocol family 17
+[5.278693 0.004999] [    2.365354] Key type dns_resolver registered
+[5.283329 0.004636] [    2.369983] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[5.291318 0.007989] [    2.378075] ThumbEE CPU extension supported.
+[5.295817 0.004499] [    2.382578] Registering SWP/SWPB emulation handler
+[5.301580 0.005763] [    2.388284] registered taskstats version 1
+[5.307457 0.005877] [    2.394181] tilcdc 4830e000.fb: No power control GPIO
+[5.318202 0.010745] [    2.404940] mmc1: BKOPS_EN bit is not set
+[5.328585 0.010383] [    2.415262] mmc1: new high speed MMC card at address 0001
+[5.334832 0.006247] [    2.421518] mmcblk0: mmc1:0001 MMC04G 3.65 GiB 
+[5.339832 0.005000] [    2.426500] mmcblk0boot0: mmc1:0001 MMC04G partition 1 1.00 MiB
+[5.346207 0.006375] [    2.432921] mmcblk0boot1: mmc1:0001 MMC04G partition 2 1.00 MiB
+[5.354457 0.008250] [    2.441141]  mmcblk0: p1 p2
+[5.359209 0.004752] [    2.445905]  mmcblk0boot1: unknown partition table
+[5.365583 0.006374] [    2.452342]  mmcblk0boot0: unknown partition table
+[5.430841 0.065258] [    2.517366] tilcdc 4830e000.fb: found TDA19988
+[5.435953 0.005112] [    2.522619] [drm] Supports vblank timestamp caching Rev 1 (10.10.2010).
+[5.442828 0.006875] [    2.529538] [drm] No driver support for vblank timestamp query.
+[5.449336 0.006508] [    2.536012] tilcdc 4830e000.fb: No connectors reported connected with modes
+[5.456585 0.007249] [    2.543294] [drm] Cannot find any crtc or sizes - going 1024x768
+[5.478217 0.021632] [    2.558849] Console: switching to colour frame buffer device 128x48
+[5.484836 0.006619] [    2.571543] tilcdc 4830e000.fb: fb0:  frame buffer device
+[5.490461 0.005625] [    2.577184] tilcdc 4830e000.fb: registered panic notifier
+[5.496100 0.005639] [    2.582840] [drm] Initialized tilcdc 1.0.0 20121205 on minor 0
+[5.551384 0.055284] [    2.637995] davinci_mdio 4a101000.mdio: davinci mdio revision 1.6
+[5.557706 0.006322] [    2.644377] davinci_mdio 4a101000.mdio: detected phy mask fffffffe
+[5.570986 0.013280] [    2.657670] libphy: 4a101000.mdio: probed
+[5.575208 0.004222] [    2.661908] davinci_mdio 4a101000.mdio: phy[0]: device 4a101000.mdio:00, driver SMSC LAN8710/LAN8720
+[5.584956 0.009748] [    2.671671] Detected MACID = 68:c9:0b:da:07:6e
+[5.589720 0.004764] [    2.676280] cpsw 4a100000.ethernet: NAPI disabled
+[5.596218 0.006498] [    2.682948] omap_rtc 44e3e000.rtc: setting system clock to 2000-01-01 00:00:01 UTC (946684801)
+[5.610096 0.013878] [    2.696685] ALSA device list:
+[5.613079 0.002983] [    2.699823]   #0: TI BeagleBone Black
+[5.617603 0.004524] [    2.704293] Freeing init memory: 244K
+[5.624721 0.007118] Loading, please wait...
+[5.692877 0.068156] [    2.779526] udevd[98]: starting version 175
+[6.845311 1.152434] Begin: Loading essential drivers ... done.
+[6.848913 0.003602] Begin: Running /scripts/init-premount ... done.
+[6.853255 0.004342] Begin: Mounting root file system ... Begin: Running /scripts/local-top ... done.
+[6.868900 0.015645] Begin: Running /scripts/local-premount ... done.
+[6.894656 0.025756] [    3.981398] EXT4-fs (mmcblk0p2): INFO: recovery required on readonly filesystem
+[6.902265 0.007609] [    3.989075] EXT4-fs (mmcblk0p2): write access will be enabled during recovery
+[7.997882 1.095617] [    5.084520] EXT4-fs (mmcblk0p2): recovery complete
+[8.006742 0.008860] [    5.093413] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[8.015806 0.009064] Begin: Running /scripts/local-bottom ... done.
+[8.023185 0.007379] done.
+[8.024055 0.000870] Begin: Running /scripts/init-bottom ... done.
+[8.463445 0.439390] 
+[8.463623 0.000178] Welcome to Debian GNU/Linux 7 (wheezy)!
+[8.468202 0.004579] 
+[8.813018 0.344816] Starting udev Kernel Device Manager...                                         
+[8.826346 0.013328] Starting POSIX Message Queue File System...                                    
+[8.855217 0.028871] Started Set Up Additional Binary Formats                               [  OK  ]
+[8.871853 0.016636] Starting Load Kernel Modules...                                                
+[8.883467 0.011614] Started Huge Pages File System                                         [  OK  ]
+[8.899603 0.016136] Starting Apply Kernel Variables...                                             
+[8.912842 0.013239] Starting Debug File System...                                                  
+[8.928098 0.015256] Starting Security File System...                                               
+[8.940220 0.012122] Starting udev Coldplug all Devices...                                          
+[8.951852 0.011632] Starting User Runtime Directory...                                             
+[8.962094 0.010242] Starting Remount API VFS...                                                    
+[8.978524 0.016430] Starting Lock Directory...                                                     
+[8.989221 0.010697] Starting Journal Service...                                                    
+[9.006607 0.017386] Started Journal Service                                                [  OK  ]
+[9.015705 0.009098] Starting File System Check on Root Device...                                   
+[9.041963 0.026258] Started POSIX Message Queue File System                                [  OK  ]
+[9.169722 0.127759] Started Apply Kernel Variables                                         [  OK  ]
+[9.179214 0.009492] Started Debug File System                                              [  OK  ]
+[9.188729 0.009515] Started Security File System                                           [  OK  ]
+[9.198096 0.009367] Started User Runtime Directory                                         [  OK  ]
+[9.210476 0.012380] Started Remount API VFS                                                [  OK  ]
+[9.219973 0.009497] Started Lock Directory                                          [    6.312364] rtusb init rt2870 --->
+[9.229220 0.009247]        [  OK  ]
+[9.272118 0.042898] [    6.358895] usbcore: registered new interface driver rt2870
+[9.311976 0.039858] Started Load Kernel Modules                                            [  OK  ]
+[9.320104 0.008128] Started Configuration File System                                      [  OK  ]
+[9.328266 0.008162] Starting FUSE Control File System...                                           
+[9.398499 0.070233] Started FUSE Control File System                                       [  OK  ]
+[9.429103 0.030604] Started udev Kernel Device Manager                                     [  OK  ]
+[9.437230 0.008127] Starting LSB: Set preliminary keymap...                                        
+[9.444344 0.007114] Sta[    6.530836] udevd[229]: starting version 175
+[9.449095 0.004751] rting LSB: Tune IDE hard disks...                                           
+[9.538767 0.089672] systemd-fsck[214]: rootfs: clean, 85041/233856 files, 486395/933632 blocks
+[9.557489 0.018722] Started File System Check on Root Device                               [  OK  ]
+[9.720772 0.163283] hdparm[234]: Setting parameters of disc: (none).
+[9.730144 0.009372] Started LSB: Tune IDE hard disks                                       [  OK  ]
+[9.818568 0.088424] Started udev Coldplug all Devices                                      [  OK  ]
+[10.403039 0.584471] keyboard-setup[233]: Setting preliminary keymap...done.
+[10.408256 0.005217] Started LSB: Set preliminary keymap                                    [  OK  ]
+[10.417130 0.008874] Starting Remount Root FS...                                                    
+[10.459653 0.042523] [    7.546449] EXT4-fs (mmcblk0p2): re-mounted. Opts: errors=remount-ro
+[10.477139 0.017486] Started Remount Root FS                                                [  OK  ]
+[10.486132 0.008993] Started Various fixups to make systemd work better on Debian           [  OK  ]
+[10.494882 0.008750] Started Lock Directory                                                 [  OK  ]
+[10.503508 0.008626] Started Runtime Directory                                              [  OK  ]
+[10.512258 0.008750] Starting LSB: Restore resolv.conf if the system crashed....                    
+[10.524010 0.011752] Starting Load Random Seed...                                                   
+[10.537762 0.013752] Starting Recreate Volatile Files and Directories...                            
+[10.549385 0.011623] Starting LSB: Restore and store ALSA driver settings...                        
+[10.561278 0.011893] Starting LSB: Prepare console...                                               
+[10.571637 0.010359] Starting LSB: screen sessions cleaning...                                      
+[10.656022 0.084385] Started Load Random Seed                                               [  OK  ]
+[10.664891 0.008869] Starting LSB: Raise network interfaces....                                     
+[10.703916 0.039025] Started LSB: Restore resolv.conf if the system crashed.                [  OK  ]
+[10.765176 0.061260] Started Recreate Volatile Files and Directories                        [  OK  ]
+[10.938389 0.173213] kbd[307]: Setting console screen modes.
+[10.944073 0.005684] Started LSB: screen sessions cleaning                                  [  OK  ]
+[11.026951 0.082878] alsa-utils[306]: Setting up ALSA...done.
+[11.035649 0.008698] Started LSB: Restore and store ALSA driver settings                    [  OK  ]
+[11.075944 0.040295] kbd[307]: Skipping font and keymap setup (handled by console-setup).
+[11.084653 0.008709] Started LSB: Prepare console                                           [  OK  ]
+[11.093537 0.008884] Starting LSB: Set console font and keymap...                                   
+[11.757305 0.663768] [    8.844068] omap_rng 48310000.rng: base address of priv is -97452032
+[11.793976 0.036671] networking[317]: Configuring network interfaces...Internet Systems Consortium DHCP Client 4.2.2
+[11.812200 0.018224] networking[317]: Copyright 2004-2011 Internet Systems Consortium.
+[11.830323 0.018123] networking[317]: All rights reserved.
+[11.851560 0.021237] networking[317]: For info, please visit https://www.isc.org/software/dhcp/
+[11.914702 0.063142] networking[317]: Corrupt lease file - possible data loss!
+[11.986455 0.071753] [    9.073296] net eth0: initializing cpsw version 1.12 (0)
+[12.006818 0.020363] [    9.093695] net eth0: phy found : id is : 0x7c0f1
+[12.023446 0.016628] [    9.110377] libphy: PHY 4a101000.mdio:01 not found
+[12.028557 0.005111] [    9.115495] net eth0: phy 4a101000.mdio:01 not found on slave 1
+[12.049449 0.020892] [    9.136353] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[12.070824 0.021375] [    9.157745] omap_rng 48310000.rng: OMAP Random Number Generator ver. 20
+[12.130001 0.059177] networking[317]: Listening on LPF/eth0/68:c9:0b:da:07:6e
+[12.141199 0.011198] networking[317]: Sending on   LPF/eth0/68:c9:0b:da:07:6e
+[12.156689 0.015490] networking[317]: Sending on   Socket/fallback
+[12.168342 0.011653] networking[317]: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+[12.603683 0.435341] console-setup[354]: Setting up console font and keymap...done.
+[12.609717 0.006034] Started LSB: Set console font and keymap                               [  OK  ]
+[15.082947 2.473230] [   12.169749] libphy: 4a101000.mdio:00 - Link is Up - 100/Full
+[15.088664 0.005717] [   12.175733] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[16.576752 1.488088] networking[317]: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+[16.590738 0.013986] networking[317]: DHCPACK from 192.168.1.1
+[16.752640 0.161902] networking[317]: bound to 192.168.1.31 -- renewal in 407324 seconds.
+[17.574011 0.821371] networking[317]: done.
+[17.580012 0.006001] Started LSB: Raise network interfaces.                                 [  OK  ]
+[17.591379 0.011367] Started Automatically Enable Systemd Units                             [  OK  ]
+[17.599753 0.008374] Starting Console System Startup Logging...                                     
+[17.614258 0.014505] Starting LSB: Create dynamic part of /etc/motd...                              
+[17.629270 0.015012] Starting LSB: Advanced IEEE 802.11 management daemon...                        
+[17.640892 0.011622] Starting LSB: Start busybox udhcpd at boot time...                             
+[17.652761 0.011869] Starting Avahi mDNS/DNS-SD Stack...                                            
+[17.666524 0.013763] Starting LSB: Start/stop apache2 web server...                                 
+[17.678138 0.011614] Starting LSB: Start daemon at boot time...                                     
+[17.692634 0.014496] Starting LSB: Start daemon at boot time...                                     
+[17.702881 0.010247] Starting LSB: Log file handling to be done during bootup....                   
+[17.715282 0.012401] Starting LSB: Start xrdp and sesman daemons...                                 
+[17.726888 0.011606] Started fast remote file copy program daemon                           [  OK  ]
+[17.735504 0.008616] Starting LSB: OpenBSD Secure Shell server...                                   
+[17.747264 0.011760] Starting LSB: Regular background program processing daemon...                  
+[17.760142 0.012878] Starting Provide limited super user privileges to specific users...            
+[17.773385 0.013243] Starting ACPI event daemon...                                                  
+[17.785513 0.012128] tarted ACPI eve
+[17.786905 0.001392] t daemon                                       S      [ nOK  ]
+[17.793531 0.006626]  Starting LSB: Run /etc/rc.local if it exist...                                 
+[17.805013 0.011482] Starting D-Bus System Message Bus...                                           
+[17.818773 0.013760] Started D-Bus System Message Bus                                       [  OK  ]
+[17.828886 0.010113] Starting LSB: SANE network scanner server...                                   
+[17.840262 0.011376] Starting LSB: Starts and stops Wicd...                                         
+[17.851884 0.011622] Starting LSB: Light Display Manager...                                         
+[17.865637 0.013753] Starting LSB: Load kernel modules needed to enable cpufreq scaling...          
+[17.879136 0.013499] Starting Bonescript autorun...                                                 
+[17.892908 0.013772] Started Bonescript autorun                                             [  OK  ]
+[17.901758 0.008850] Starting WPA supplicant...                                                     
+[17.914524 0.012766] Starting jekyll autorun...                                                     
+[17.926147 0.011623] Started jekyll autorun                                                 [  OK  ]
+[17.935014 0.008867] Starting Permit User Sessions...                                               
+[17.948021 0.013007] Starting Login Service...                                                      
+[17.965183 0.017162] Starting Console Manager...                                                    
+[17.978922 0.013739] Starting Daemon for power management...                                        
+[17.990789 0.011867] Starting System Logging Service...                                             
+[18.007658 0.016869] Started System Logging Service                                         [  OK  ]
+[18.020022 0.012364] Started Console System Startup Logging                                 [  OK  ]
+[18.031541 0.011519] Started LSB: Create dynamic part of /etc/motd                          [  OK  ]
+[18.042270 0.010729] Started LSB: Advanced IEEE 802.11 management daemon                    [  OK  ]
+[18.132519 0.090249] Started LSB: SANE network scanner server                               [  OK  ]
+[18.140522 0.008003] saned[657]: saned disabled; edit /etc/default/saned
+[18.234253 0.093731] Started LSB: Start busybox udhcpd at boot time                         [  OK  ]
+[18.261916 0.027663] Started Permit User Sessions                                           [  OK  ]
+[18.269933 0.008017] Starting Getty on tty1...                                                      
+[18.277050 0.007117] Started Getty on tty1                                                  [  OK  ]
+[18.285272 0.008222] Starting Serial Getty on ttyO0...      udhcpd[637]: Starting very small Busybox based DHCP server: udhcpd.
+[18.349941 0.064669] Started Provide limited super user privileges to specific users        [  OK  ]
+[18.630548 0.280607] Started LSB: Run /etc/rc.local if it exist                             [  OK  ]
+[18.688017 0.057469] Started LSB: Start daemon at boot time                                 [  OK  ]
+[18.940293 0.252276] lightdm[659]: Starting Light Display Manager: lightdm.
+[18.947715 0.007422] Started LSB: Light Display Manager                                     [  OK  ]
+[19.300415 0.352700] Started Avahi mDNS/DNS-SD Stack                                        [  OK  ]
+[19.309813 0.009398] xrdp[645]: cmp: EOF on /etc/xrdp/rsakeys.ini
+[19.332825 0.023012] generic-boot-script.sh[643]: Sun Mar  1 20:46:00 UTC 2015
+[19.371721 0.038896] Started Login Service                                                  [  OK  ]
+[19.399628 0.027907] Started WPA supplicant                                                 [  OK  ]
+[19.438635 0.039007] Started Daemon for power management                                    [  OK  ]
+[19.620656 0.182021] 
+[19.621034 0.000378] Debian GNU/Linux 7 beaglebone ttyO0
+[19.654587 0.033553] 
+[19.660331 0.005744] BeagleBoard.org Debian Image 2015-03-01
+[19.751099 0.090768] 
+[19.754696 0.003597] Support/FAQ: http://elinux.orgStarting Authenticate and Authorize Users to Run Privileged Tasks...           
+[19.847588 0.092892] /Beagleboard:BeagleBoneBlack_Debian
+[19.941384 0.093796] 
+[19.948010 0.006626] default username:pasStarted LSB: OpenBSD Secure Shell server                               [  OK  ]
+[20.001134 0.053124] sword is [debian:temppwd]
+[20.003607 0.002473] 
+[20.003722 0.000115] Started LSB: Regular background program processing daemon              [  OK  ]
+[20.040124 0.036402] beaglebone login: cron[648]: Starting periodic command scheduler: cron.
+[20.227244 0.187120] ssh[647]: Starting OpenBSD Secure Shell server: sshd.
+[20.412988 0.185744] xrdp[645]: Starting Remote Desktop Protocol server : xrdp sesman.
+[20.428610 0.015622] Started LSB: Start xrdp and sesman daemons                             [  OK  ]
+[20.559619 0.131009] loadcpufreq[661]: Loading cpufreq kernel modules...done (none).
+[20.572611 0.012992] Started LSB: Load kernel modules needed to enable cpufreq scaling      [  OK  ]
+[20.580628 0.008017] Starting LSB: set CPUFreq kernel parameters...                                 
+[20.665088 0.084460] Started Authenticate and Authorize Users to Run Privileged Tasks       [  OK  ]
+[20.815376 0.150288] Started Console Manager                                                [  OK  ]
+[20.913166 0.097790] apache2[640]: Starting web server: apache2.
+[20.921494 0.008328] Started LSB: Start/stop apache2 web server                             [  OK  ]
+[21.528148 0.606654] Started LSB: Log file handling to be done during bootup.               [  OK  ]
+[21.565648 0.037500] cpufrequtils[912]: CPUFreq Utilities: Setting ondemand CPUFreq governor...CPU0...done.
+[21.580433 0.014785] Started LSB: set CPUFreq kernel parameters                             [  OK  ]
+[21.604283 0.023850] Started LSB: Start daemon at boot time                                 [  OK  ]
+[22.674183 1.069900] [   19.761278]  gadget: using random self ethernet address
+[22.721314 0.047131] [   19.808571] usb0: MAC ea:ae:f1:c1:24:dd
+[22.725431 0.004117] [   19.812667] usb0: HOST MAC 68:c9:0b:da:07:70
+[22.736459 0.011028] [   19.823634]  gadget: Mass Storage Function, version: 2009/09/11
+[22.742689 0.006230] [   19.829930]  gadget: Number of LUNs=1
+[22.763946 0.021257] Starting Serial Getty on ttyGS0...                                             
+[22.772318 0.008372] Started Serial Getty on ttyGS0                                         [  OK  ]
+[22.802198 0.029880] [   19.889384]  lun0: LUN: removable file: /dev/mmcblk0p1
+[22.848874 0.046676] [   19.936086]  gadget: Multifunction Composite Gadget
+[22.890697 0.041823] [   19.977962]  gadget: g_multi ready
+[22.919979 0.029282] [   20.007233] musb-hdrc musb-hdrc.0.auto: MUSB HDRC host driver
+[22.966950 0.046971] [   20.054247] musb-hdrc musb-hdrc.0.auto: new USB bus registered, assigned bus number 2
+[23.032395 0.065445] [   20.119635] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[23.039574 0.007179] [   20.126832] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[23.047064 0.007490] [   20.134393] usb usb2: Product: MUSB HDRC host driver
+[23.052376 0.005312] [   20.139581] usb usb2: Manufacturer: Linux 3.8.13-bone70 musb-hcd
+[23.058564 0.006188] [   20.145858] usb usb2: SerialNumber: musb-hdrc.0.auto
+[23.111966 0.053402] [   20.199224] hub 2-0:1.0: USB hub found
+[23.144706 0.032740] [   20.232005] hub 2-0:1.0: 1 port detected
+[23.656484 0.511778] Starting ifup for usb0...                                                      
+[23.664974 0.008490] Started ifup for usb0                                                  [  OK  ]
+[25.510022 1.845048] [   22.597248] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+[26.721725 1.211703] wicd[658]: Starting Network connection manager: wicd.
+[26.731827 0.010102] Started LSB: Starts and stops Wicd                                     [  OK  ]
+[26.739948 0.008121] Starting Notify Audit System and Update UTMP about System Runlevel Changes...  
+
+
