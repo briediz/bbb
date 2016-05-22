@@ -1,0 +1,662 @@
+[3.886674 3.886673] U-Boot SPL 2016.03-00001-gd12d09f (Mar 17 2016 - 16:16:15)
+[0.127527 0.127527] Trying to boot from MMC
+[0.195354 0.067827] bad magic
+[0.229566 0.034212] 
+[0.229870 0.000304] 
+[0.229946 0.000076] U-Boot 2016.03-00001-gd12d09f (Mar 17 2016 - 16:16:15 -0500), Build: jenkins-github_Bootloader-Builder-351
+[0.009444 0.009444] 
+[0.009585 0.000141]        Watchdog enabled
+[0.011945 0.002360] I2C:   ready
+[0.065452 0.053507] DRAM:  512 MiB
+[0.113866 0.048414] Reset Source: Power-on reset has occurred.
+[0.118825 0.004959] MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+[0.122198 0.003373] Using default environment
+[0.124570 0.002372] 
+[0.215837 0.091267] Net:   <ethaddr> not set. Validating first E-fuse MAC
+[0.257122 0.041285] cpsw, usb_ether
+[0.259326 0.002204] Press SPACE to abort autoboot in 2 seconds
+[2.275255 2.015929] Card did not respond to voltage select!
+[2.279368 0.004113] gpio: pin 56 (gpio 56) value is 0
+[2.282485 0.003117] gpio: pin 55 (gpio 55) value is 0
+[2.285612 0.003127] gpio: pin 54 (gpio 54) value is 0
+[2.288614 0.003002] gpio: pin 53 (gpio 53) value is 1
+[2.301741 0.013127] Card did not respond to voltage select!
+[2.314620 0.012879] Card did not respond to voltage select!
+[2.377421 0.062801] switch to partitions #0, OK
+[2.379878 0.002457] mmc1(part 0) is current device
+[2.468806 0.088928] Scanning mmc 1:1...
+[2.685848 0.217042] gpio: pin 56 (gpio 56) value is 0
+[2.688761 0.002913] gpio: pin 55 (gpio 55) value is 0
+[2.691868 0.003107] gpio: pin 54 (gpio 54) value is 0
+[2.694869 0.003001] gpio: pin 53 (gpio 53) value is 1
+[2.756917 0.062048] switch to partitions #0, OK
+[2.759371 0.002454] mmc1(part 0) is current device
+[2.820257 0.060886] gpio: pin 54 (gpio 54) value is 1
+[3.026104 0.205847] Checking for: /uEnv.txt ...
+[3.068890 0.042786] Checking for: /boot.scr ...
+[3.111937 0.043047] Checking for: /boot/boot.scr ...
+[3.144593 0.032656] Checking for: /boot/uEnv.txt ...
+[3.173385 0.028792] gpio: pin 55 (gpio 55) value is 1
+[3.204022 0.030637] 1288 bytes read in 23 ms (54.7 KiB/s)
+[3.208128 0.004106] Loaded environment from /boot/uEnv.txt
+[3.212003 0.003875] Checking if uname_r is set in /boot/uEnv.txt...
+[3.216503 0.004500] gpio: pin 56 (gpio 56) value is 1
+[3.220002 0.003499] Running uname_boot ...
+[3.255140 0.035138] loading /boot/vmlinuz-4.4.9-ti-r25 ...
+[3.721274 0.466134] 7833256 bytes read in 457 ms (16.3 MiB/s)
+[3.763937 0.042663] loading /boot/dtbs/4.4.9-ti-r25/am335x-boneblack.dtb ...
+[3.812079 0.048142] 60958 bytes read in 38 ms (1.5 MiB/s)
+[3.846062 0.033983] loading /boot/initrd.img-4.4.9-ti-r25 ...
+[4.153749 0.307687] 4761957 bytes read in 299 ms (15.2 MiB/s)
+[4.160410 0.006661] debug: [console=ttyO0,115200n8 root=UUID=ac55a1c1-48cd-4193-af32-c7b5b0e877c0 ro rootfstype=ext4 rootwait coherent_pool=1M cape_universal=enable] ...
+[4.174280 0.013870] debug: [bootz 0x82000000 0x88080000:48a965 0x88000000] ...
+[4.180654 0.006374] Kernel image @ 0x82000000 [ 0x000000 - 0x7786a8 ]
+[4.185029 0.004375] ## Flattened Device Tree blob at 88000000
+[4.188772 0.003743]    Booting using the fdt blob at 0x88000000
+[4.193272 0.004500]    Loading Ramdisk to 8fb75000, end 8ffff965 ... OK
+[4.238121 0.044849]    Loading Device Tree to 8fb63000, end 8fb74e1d ... OK
+[4.247276 0.009155] 
+[4.247531 0.000255] Starting kernel ...
+[4.249305 0.001774] 
+[6.564554 2.315249] [    0.000000] Booting Linux on physical CPU 0x0
+[6.568945 0.004391] [    0.000000] Initializing cgroup subsys cpuset
+[6.573321 0.004376] [    0.000000] Initializing cgroup subsys cpu
+[6.577566 0.004245] [    0.000000] Initializing cgroup subsys cpuacct
+[6.581952 0.004386] [    0.000000] Linux version 4.4.9-ti-r25 (root@b3-jetson-tk1-2gb) (gcc version 4.9.2 (Debian 4.9.2-10) ) #1 SMP Thu May 5 23:08:13 UTC 2016
+[6.594462 0.012510] [    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=50c5387d
+[6.601453 0.006991] [    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[6.609244 0.007791] [    0.000000] Machine model: TI AM335x BeagleBone Black
+[6.614329 0.005085] [    0.000000] cma: Reserved 24 MiB at 0x9e000000
+[6.618733 0.004404] [    0.000000] Memory policy: Data cache writeback
+[6.623338 0.004605] [    0.000000] CPU: All CPU(s) started in SVC mode.
+[6.627941 0.004603] [    0.000000] AM335X ES2.1 (sgx neon )
+[6.631578 0.003637] [    0.000000] PERCPU: Embedded 13 pages/cpu @df923000 s24320 r8192 d20736 u53248
+[6.638828 0.007250] [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129408
+[6.646867 0.008039] [    0.000000] Kernel command line: console=ttyO0,115200n8 root=UUID=ac55a1c1-48cd-4193-af32-c7b5b0e877c0 ro rootfstype=ext4 rootwait coherent_pool=1M cape_universal=enable
+[6.662082 0.015215] [    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[6.668077 0.005995] [    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[6.675071 0.006994] [    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[6.681940 0.006869] [    0.000000] Memory: 474080K/522240K available (7344K kernel code, 914K rwdata, 3704K rodata, 604K init, 907K bss, 23584K reserved, 24576K cma-reserved, 0K highmem)
+[6.696713 0.014773] [    0.000000] Virtual kernel memory layout:
+[6.700692 0.003979] [    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[6.706454 0.005762] [    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[6.712193 0.005739] [    0.000000]     vmalloc : 0xe0800000 - 0xff800000   ( 496 MB)
+[6.717958 0.005765] [    0.000000]     lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+[6.723705 0.005747] [    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[6.729460 0.005755] [    0.000000]     modules : 0xbf800000 - 0xbfe00000   (   6 MB)
+[6.735204 0.005744] [    0.000000]       .text : 0xc0008000 - 0xc0ad2480   (11050 kB)
+[6.740991 0.005787] [    0.000000]       .init : 0xc0ad3000 - 0xc0b6a000   ( 604 kB)
+[6.746830 0.005839] [    0.000000]       .data : 0xc0b6a000 - 0xc0c4e818   ( 915 kB)
+[6.752567 0.005737] [    0.000000]        .bss : 0xc0c51000 - 0xc0d33de8   ( 908 kB)
+[6.758329 0.005762] [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[6.764834 0.006505] [    0.000000] Hierarchical RCU implementation.
+[6.769193 0.004359] [    0.000000] 	Build-time adjustment of leaf fanout to 32.
+[6.774455 0.005262] [    0.000000] 	RCU restricting CPUs from NR_CPUS=2 to nr_cpu_ids=1.
+[6.780707 0.006252] [    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=1
+[6.787318 0.006611] [    0.000000] NR_IRQS:16 nr_irqs:16 16
+[6.790955 0.003637] [    0.000000] IRQ: Found an INTC at 0xfa200000 (revision 5.0) with 128 interrupts
+[6.798320 0.007365] [    0.000000] OMAP clockevent source: timer2 at 24000000 Hz
+[6.803756 0.005436] [    0.000011] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+[6.811694 0.007938] [    0.000032] clocksource: timer1: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[6.820857 0.009163] [    0.000044] OMAP clocksource: timer1 at 24000000 Hz
+[6.825822 0.004965] [    0.000227] Console: colour dummy device 80x30
+[6.830194 0.004372] [    0.000251] WARNING: Your 'console=ttyO0' has been replaced by 'ttyS0'
+[6.836822 0.006628] [    0.000258] This ensures that you still see kernel messages. Please
+[6.843082 0.006260] [    0.000264] update your kernel commandline.
+[6.847333 0.004251] [    0.000283] Calibrating delay loop... 995.32 BogoMIPS (lpj=1990656)
+[6.853708 0.006375] [    0.046944] pid_max: default: 32768 minimum: 301
+[6.858195 0.004487] [    0.047079] Security Framework initialized
+[6.862332 0.004137] [    0.047092] Yama: becoming mindful.
+[6.865858 0.003526] [    0.047124] AppArmor: AppArmor disabled by boot time parameter
+[6.871744 0.005886] [    0.047278] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[6.878358 0.006614] [    0.047290] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[6.885445 0.007087] [    0.048066] Initializing cgroup subsys io
+[6.889447 0.004002] [    0.048096] Initializing cgroup subsys memory
+[6.893856 0.004409] [    0.048135] Initializing cgroup subsys devices
+[6.898324 0.004468] [    0.048152] Initializing cgroup subsys freezer
+[6.902821 0.004497] [    0.048167] Initializing cgroup subsys net_cls
+[6.907334 0.004513] [    0.048181] Initializing cgroup subsys perf_event
+[6.911993 0.004659] [    0.048194] Initializing cgroup subsys net_prio
+[6.916584 0.004591] [    0.048208] Initializing cgroup subsys pids
+[6.920744 0.004160] [    0.048264] CPU: Testing write buffer coherency: ok
+[6.925709 0.004965] [    0.048316] ftrace: allocating 34073 entries in 67 pages
+[6.930998 0.005289] [    0.133461] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[6.936196 0.005198] [    0.133579] Setting up static identity map for 0x80008240 - 0x8000828c
+[6.942744 0.006548] [    0.136978] Brought up 1 CPUs
+[6.945748 0.003004] [    0.136999] SMP: Total of 1 processors activated (995.32 BogoMIPS).
+[6.951986 0.006238] [    0.137008] CPU: All CPU(s) started in SVC mode.
+[6.956714 0.004728] [    0.138434] devtmpfs: initialized
+[6.959959 0.003245] [    0.157145] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[6.967710 0.007751] [    0.175055] omap_hwmod: debugss: _wait_target_disable failed
+[6.973321 0.005611] [    0.228799] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[6.983201 0.009880] [    0.230921] xor: measuring software checksum speed
+[6.987961 0.004760] [    0.270945]    arm4regs  :  1221.000 MB/sec
+[6.992197 0.004236] [    0.310944]    8regs     :  1094.000 MB/sec
+[6.996322 0.004125] [    0.350941]    32regs    :  1093.000 MB/sec
+[7.000572 0.004250] [    0.390942]    neon      :  1754.000 MB/sec
+[7.004833 0.004261] [    0.390949] xor: using function: neon (1754.000 MB/sec)
+[7.010085 0.005252] [    0.391044] pinctrl core: initialized pinctrl subsystem
+[7.015335 0.005250] [    0.393001] NET: Registered protocol family 16
+[7.019737 0.004402] [    0.396508] DMA: preallocated 1024 KiB pool for atomic coherent allocations
+[7.026747 0.007010] [    0.397721] cpuidle: using governor ladder
+[7.030859 0.004112] [    0.397740] cpuidle: using governor menu
+[7.034836 0.003977] [    0.402707] OMAP GPIO hardware version 0.1
+[7.038947 0.004111] [    0.414710] No ATAGs?
+[7.041209 0.002262] [    0.414740] hw-breakpoint: debug architecture 0x4 unsupported.
+[7.047072 0.005863] [    0.415391] omap4_sram_init:Unable to allocate sram needed to handle errata I688
+[7.054497 0.007425] [    0.415405] omap4_sram_init:Unable to get sram pool needed to handle errata I688
+[7.061961 0.007464] [    0.495068] raid6: int32x1  gen()   269 MB/s
+[7.066200 0.004239] [    0.563037] raid6: int32x1  xor()   236 MB/s
+[7.070497 0.004297] [    0.631053] raid6: int32x2  gen()   356 MB/s
+[7.074825 0.004328] [    0.698986] raid6: int32x2  xor()   269 MB/s
+[7.079072 0.004247] [    0.767028] raid6: int32x4  gen()   405 MB/s
+[7.083451 0.004379] [    0.835032] raid6: int32x4  xor()   259 MB/s
+[7.087696 0.004245] [    0.903092] raid6: int32x8  gen()   359 MB/s
+[7.091950 0.004254] [    0.970954] raid6: int32x8  xor()   231 MB/s
+[7.096236 0.004286] [    1.038956] raid6: neonx1   gen()  1458 MB/s
+[7.100575 0.004339] [    1.106975] raid6: neonx1   xor()   847 MB/s
+[7.104825 0.004250] [    1.174953] raid6: neonx2   gen()  1881 MB/s
+[7.109201 0.004376] [    1.242946] raid6: neonx2   xor()  1174 MB/s
+[7.113449 0.004248] [    1.310970] raid6: neonx4   gen()  1976 MB/s
+[7.117749 0.004300] [    1.378965] raid6: neonx4   xor()  1204 MB/s
+[7.122101 0.004352] [    1.446959] raid6: neonx8   gen()  1211 MB/s
+[7.126323 0.004222] [    1.514978] raid6: neonx8   xor()   672 MB/s
+[7.130724 0.004401] [    1.514985] raid6: using algorithm neonx4 gen() 1976 MB/s
+[7.136074 0.005350] [    1.514992] raid6: .... xor() 1204 MB/s, rmw enabled
+[7.141087 0.005013] [    1.514998] raid6: using intx1 recovery algorithm
+[7.145752 0.004665] [    1.524105] edma 49000000.edma: TI EDMA DMA engine driver
+[7.151214 0.005462] [    1.528806] SCSI subsystem initialized
+[7.154948 0.003734] [    1.529528] usbcore: registered new interface driver usbfs
+[7.160451 0.005503] [    1.529608] usbcore: registered new interface driver hub
+[7.165836 0.005385] [    1.529706] usbcore: registered new device driver usb
+[7.170880 0.005044] [    1.530280] omap_i2c 44e0b000.i2c: could not find pctldev for node /ocp/l4_wkup@44c00000/scm@210000/pinmux@800/pinmux_i2c0_pins, deferring probe
+[7.183962 0.013082] [    1.530325] omap_i2c 4819c000.i2c: could not find pctldev for node /ocp/l4_wkup@44c00000/scm@210000/pinmux@800/pinmux_i2c2_pins, deferring probe
+[7.196951 0.012989] [    1.530445] media: Linux media interface: v0.10
+[7.201450 0.004499] [    1.530508] Linux video capture interface: v2.00
+[7.206076 0.004626] [    1.530602] pps_core: LinuxPPS API ver. 1 registered
+[7.211079 0.005003] [    1.530609] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[7.220336 0.009257] [    1.530636] PTP clock support registered
+[7.224200 0.003864] [    1.531530] omap-mailbox 480c8000.mailbox: omap mailbox rev 0x400
+[7.230325 0.006125] [    1.532803] NetLabel: Initializing
+[7.233826 0.003501] [    1.532815] NetLabel:  domain hash size = 128
+[7.238201 0.004375] [    1.532821] NetLabel:  protocols = UNLABELED CIPSOv4
+[7.243129 0.004928] [    1.532876] NetLabel:  unlabeled traffic allowed by default
+[7.248754 0.005625] [    1.533234] clocksource: Switched to clocksource timer1
+[7.254003 0.005249] [    1.639232] NET: Registered protocol family 2
+[7.258327 0.004324] [    1.639984] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[7.265451 0.007124] [    1.640032] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[7.271953 0.006502] [    1.640091] TCP: Hash tables configured (established 4096 bind 4096)
+[7.278325 0.006372] [    1.640156] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[7.284203 0.005878] [    1.640177] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[7.290452 0.006249] [    1.640466] NET: Registered protocol family 1
+[7.294830 0.004378] [    1.641003] RPC: Registered named UNIX socket transport module.
+[7.300831 0.006001] [    1.641015] RPC: Registered udp transport module.
+[7.305578 0.004747] [    1.641021] RPC: Registered tcp transport module.
+[7.310337 0.004759] [    1.641027] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[7.316740 0.006403] [    1.641679] Unpacking initramfs...
+[7.320201 0.003461] [    1.977164] Freeing initrd memory: 4652K (cfb75000 - d0000000)
+[7.326083 0.005882] [    1.977870] hw perfevents: enabled with armv7_cortex_a8 PMU driver, 5 counters available
+[7.334201 0.008118] [    1.980400] futex hash table entries: 256 (order: 2, 16384 bytes)
+[7.340330 0.006129] [    1.980516] audit: initializing netlink subsys (disabled)
+[7.345722 0.005392] [    1.980592] audit: type=2000 audit(1.916:1): initialized
+[7.351082 0.005360] [    1.990814] zbud: loaded
+[7.353577 0.002495] [    1.991453] VFS: Disk quotas dquot_6.6.0
+[7.357581 0.004004] [    1.991701] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[7.364495 0.006914] [    1.994408] NFS: Registering the id_resolver key type
+[7.369702 0.005207] [    1.994474] Key type id_resolver registered
+[7.373831 0.004129] [    1.994482] Key type id_legacy registered
+[7.377827 0.003996] [    1.994508] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[7.384577 0.006750] [    1.994836] fuse init (API version 7.23)
+[7.388578 0.004001] [    1.995459] SGI XFS with ACLs, security attributes, realtime, no debug enabled
+[7.395827 0.007249] [    2.003161] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[7.403205 0.007378] [    2.003389] io scheduler noop registered
+[7.407215 0.004010] [    2.003404] io scheduler deadline registered
+[7.411455 0.004240] [    2.003465] io scheduler cfq registered (default)
+[7.416202 0.004747] [    2.004797] pinctrl-single 44e10800.pinmux: 142 pins at pa f9e10800 size 568
+[7.423231 0.007029] [    2.006480] wkup_m3_ipc 44e11324.wkup_m3_ipc: could not get rproc handle
+[7.429954 0.006723] [    2.007697] Serial: 8250/16550 driver, 6 ports, IRQ sharing disabled
+[7.436458 0.006504] [    2.010865] 44e09000.serial: ttyS0 at MMIO 0x44e09000 (irq = 158, base_baud = 3000000) is a 8250
+[7.445331 0.008873] [    2.891874] console [ttyS0] enabled
+[7.450208 0.004877] [    2.896828] [drm] Initialized drm 1.1.0 20060810
+[7.506755 0.056547] [    2.953305] davinci_mdio 4a101000.mdio: davinci mdio revision 1.6
+[7.512833 0.006078] [    2.959467] davinci_mdio 4a101000.mdio: detected phy mask fffffffe
+[7.519460 0.006627] [    2.966027] davinci_mdio: dt: updated phy_id[0] from phy_mask[fffffffe]
+[7.533254 0.013794] [    2.979739] libphy: 4a101000.mdio: probed
+[7.537332 0.004078] [    2.983884] davinci_mdio 4a101000.mdio: phy[0]: device 4a101000.mdio:00, driver SMSC LAN8710/LAN8720
+[7.547335 0.010003] [    2.993930] cpsw 4a100000.ethernet: Detected MACID = 68:c9:0b:da:07:6e
+[7.555838 0.008503] [    3.002432] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[7.562600 0.006762] [    3.009161] ehci-platform: EHCI generic platform driver
+[7.568101 0.005501] [    3.014641] ehci-omap: OMAP-EHCI Host Controller driver
+[7.573711 0.005610] [    3.020334] usbcore: registered new interface driver usb-storage
+[7.581336 0.007625] [    3.027970] 47401300.usb-phy supply vcc not found, using dummy regulator
+[7.591588 0.010252] [    3.038141] 47401b00.usb-phy supply vcc not found, using dummy regulator
+[7.600464 0.008876] [    3.047090] musb-hdrc musb-hdrc.1.auto: MUSB HDRC host driver
+[7.606351 0.005887] [    3.052935] musb-hdrc musb-hdrc.1.auto: new USB bus registered, assigned bus number 1
+[7.614460 0.008109] [    3.061060] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[7.621343 0.006883] [    3.067913] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[7.628584 0.007241] [    3.075183] usb usb1: Product: MUSB HDRC host driver
+[7.633585 0.005001] [    3.080182] usb usb1: Manufacturer: Linux 4.4.9-ti-r25 musb-hcd
+[7.639587 0.006002] [    3.086141] usb usb1: SerialNumber: musb-hdrc.1.auto
+[7.645336 0.005749] [    3.091948] hub 1-0:1.0: USB hub found
+[7.649208 0.003872] [    3.095864] hub 1-0:1.0: 1 port detected
+[7.662734 0.013526] [    3.109191] mousedev: PS/2 mouse device common for all mice
+[7.670866 0.008132] [    3.117370] omap_rtc 44e3e000.rtc: rtc core: registered 44e3e000.rtc as rtc0
+[7.678835 0.007969] [    3.125404] i2c /dev entries driver
+[7.683836 0.005001] [    3.130500] omap_wdt: OMAP Watchdog Timer Rev 0x01: initial timeout 60 sec
+[7.691723 0.007887] [    3.138273] omap_hsmmc 48060000.mmc: Got CD GPIO
+[7.760105 0.068382] [    3.206679] hidraw: raw HID events driver (C) Jiri Kosina
+[7.766338 0.006233] [    3.212926] usbcore: registered new interface driver usbhid
+[7.771968 0.005630] [    3.218576] usbhid: USB HID core driver
+[7.776088 0.004120] [    3.222741] ashmem: initialized
+[7.780340 0.004252] [    3.226936]  remoteproc0: wkup_m3 is available
+[7.784836 0.004496] [    3.231454]  remoteproc0: Note: remoteproc is still under development and considered experimental.
+[7.793853 0.009017] [    3.240487]  remoteproc0: THE BINARY FORMAT IS NOT YET FINALIZED, and backward compatibility isn't yet guaranteed.
+[7.811357 0.017504] [    3.257926] NET: Registered protocol family 10
+[7.818466 0.007109] [    3.265089] mip6: Mobile IPv6
+[7.823590 0.005124] [    3.270212] NET: Registered protocol family 17
+[7.828213 0.004623] [    3.274849] Key type dns_resolver registered
+[7.832589 0.004376] [    3.279177] mpls_gso: MPLS GSO support
+[7.836713 0.004124] [    3.283280] omap_voltage_late_init: Voltage driver support not added
+[7.843966 0.007253] [    3.290581] PM: Cannot get wkup_m3_ipc handle
+[7.848590 0.004624] [    3.295171] ThumbEE CPU extension supported.
+[7.852961 0.004371] [    3.299552] Registering SWP/SWPB emulation handler
+[7.858839 0.005878] [    3.305506] registered taskstats version 1
+[7.863212 0.004373] [    3.309819] zswap: loaded using pool lzo/zbud
+[7.870216 0.007004] [    3.316762] mmc1: MAN_BKOPS_EN bit is not set
+[7.875341 0.005125] [    3.321973] Btrfs loaded
+[7.882345 0.007004] [    3.328977] mmc1: new high speed MMC card at address 0001
+[7.895368 0.013023] [    3.341916] mmcblk0: mmc1:0001 MMC04G 3.66 GiB 
+[7.900965 0.005597] [    3.347564] mmcblk0boot0: mmc1:0001 MMC04G partition 1 1.00 MiB
+[7.912991 0.012026] [    3.359523] mmcblk0boot1: mmc1:0001 MMC04G partition 2 1.00 MiB
+[7.925112 0.012121] [    3.371747]  mmcblk0: p1
+[7.930221 0.005109] [    3.376829] Key type encrypted registered
+[7.937108 0.006887] [    3.383725] input: tps65217_pwr_but as /devices/platform/ocp/44e0b000.i2c/i2c-0/0-0024/input/input0
+[7.968111 0.031003] [    3.414694] tps65217 0-0024: TPS65217 ID 0xe version 1.2
+[7.973965 0.005854] [    3.420597] at24 0-0050: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[7.981217 0.007252] [    3.427794] omap_i2c 44e0b000.i2c: bus 0 rev0.11 at 400 kHz
+[7.988354 0.007137] [    3.435013] at24 2-0054: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[7.995729 0.007375] [    3.442388] at24 2-0055: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[8.003090 0.007361] [    3.449702] at24 2-0056: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[8.010351 0.007261] [    3.457025] at24 2-0057: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[8.017339 0.006988] [    3.463991] omap_i2c 4819c000.i2c: bus 2 rev0.11 at 100 kHz
+[8.023977 0.006638] [    3.470613]  remoteproc0: powering up wkup_m3
+[8.028591 0.004614] [    3.475157]  remoteproc0: Booting fw image am335x-pm-firmware.elf, size 219735
+[8.036089 0.007498] [    3.482708]  remoteproc0: remote processor wkup_m3 is now up
+[8.041840 0.005751] [    3.488403] wkup_m3_ipc 44e11324.wkup_m3_ipc: CM3 Firmware Version = 0x191
+[8.053238 0.011398] [    3.499891] bone_capemgr bone_capemgr: Baseboard: 'A335BNLT,00C0,4215BBBK018F'
+[8.060589 0.007351] [    3.507217] bone_capemgr bone_capemgr: compatible-baseboard=ti,beaglebone-black - #slots=4
+[8.106751 0.046162] [    3.553242] bone_capemgr bone_capemgr: slot #0: No cape found
+[8.150626 0.043875] [    3.597237] bone_capemgr bone_capemgr: slot #1: No cape found
+[8.194604 0.043978] [    3.641238] bone_capemgr bone_capemgr: slot #2: No cape found
+[8.238605 0.044001] [    3.685236] bone_capemgr bone_capemgr: slot #3: No cape found
+[8.244471 0.005866] [    3.691116] bone_capemgr bone_capemgr: initialized OK.
+[8.251359 0.006888] [    3.698018] PM: bootloader does not support rtc-only!
+[8.257107 0.005748] [    3.703704] omap_rtc 44e3e000.rtc: setting system clock to 2000-01-01 00:00:00 UTC (946684800)
+[8.265849 0.008742] [    3.712497] of_cfs_init
+[8.268472 0.002623] [    3.715086] of_cfs_init: OK
+[8.277599 0.009127] [    3.724199] Freeing unused kernel memory: 604K (c0ad3000 - c0b6a000)
+[8.287848 0.010249] Loading, please wait...
+[8.519260 0.231412] [    3.965706] systemd-udevd[104]: starting version 215
+[8.533372 0.014112] [    3.980005] random: systemd-udevd urandom read with 25 bits of entropy available
+[9.149253 0.615881] Begin: Loading essential drivers ... done.
+[9.152989 0.003736] Begin: Running /scripts/init-premount ... done.
+[9.157242 0.004253] Begin: Mounting root file system ... Begin: Running /scripts/local-top ... done.
+[9.164491 0.007249] Begin: Running /scripts/local-premount ... done.
+[9.216879 0.052388] Begin: Will now check root file system ... fsck from util-linux 2.25.2
+[9.291522 0.074643] fsck: error 2 (No such file or directory) while executing fsck.ext4 for /dev/mmcblk0p1
+[9.299618 0.008096] fsck exited with status code 8
+[9.302490 0.002872] done.
+[9.303011 0.000521] Warning: File system check failed but did not detect errors
+[14.314724 5.011713] [    9.761512] EXT4-fs (mmcblk0p1): INFO: recovery required on readonly filesystem
+[14.321962 0.007238] [    9.768921] EXT4-fs (mmcblk0p1): write access will be enabled during recovery
+[17.451412 3.129450] [   12.898380] EXT4-fs (mmcblk0p1): recovery complete
+[17.460026 0.008614] [   12.907150] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: (null)
+[17.469155 0.009129] done.
+[17.534974 0.065819] Begin: Running /scripts/local-bottom ... done.
+[17.541442 0.006468] Begin: Running /scripts/init-bottom ... done.
+[17.821030 0.279588] [   13.267945] systemd[1]: systemd 215 running in system mode. (+PAM +AUDIT +SELINUX +IMA +SYSVINIT +LIBCRYPTSETUP +GCRYPT +ACL +XZ -SECCOMP -APPARMOR)
+[17.834651 0.013621] [   13.281803] systemd[1]: Detected architecture 'arm'.
+[17.859200 0.024549] 
+[17.859282 0.000082] Welcome to Debian GNU/Linux 8 (jessie)!
+[17.863646 0.004364] 
+[17.868289 0.004643] [   13.315321] systemd[1]: Set hostname to <beaglebone>.
+[18.339105 0.470816] [   13.786165] systemd[1]: Expecting device dev-ttyS0.device...
+[18.345537 0.006432]          Expecting device dev-ttyS0.device...
+[18.354431 0.008894] [   13.801470] systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+[18.362535 0.008104] [   13.809601] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[18.370283 0.007748] [   13.817419] systemd[1]: Starting Remote File Systems (Pre).
+[18.376285 0.006002] [  OK  ] Reached target Remote File Systems (Pre).
+[18.382285 0.006000] [   13.829362] systemd[1]: Reached target Remote File Systems (Pre).
+[18.388653 0.006368] [   13.835747] systemd[1]: Starting Dispatch Password Requests to Console Directory Watch.
+[18.397033 0.008380] [   13.844169] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[18.405154 0.008121] [   13.852298] systemd[1]: Starting Paths.
+[18.409278 0.004124] [  OK  ] Reached target Paths.
+[18.414285 0.005007] [   13.861360] systemd[1]: Reached target Paths.
+[18.418908 0.004623] [   13.866002] systemd[1]: Starting Arbitrary Executable File Formats File System Automount Point.
+[18.429035 0.010127] [  OK  ] Set up automount Arbitrary Executable File Formats F...utomount Point.
+[18.442302 0.013267] [   13.889389] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[18.451912 0.009610] [   13.899030] systemd[1]: Starting Encrypted Volumes.
+[18.457154 0.005242] [  OK  ] Reached target Encrypted Volumes.
+[18.462283 0.005129] [   13.909395] systemd[1]: Reached target Encrypted Volumes.
+[18.467906 0.005623] [   13.914986] systemd[1]: Starting Swap.
+[18.471915 0.004009] [  OK  ] Reached target Swap.
+[18.478158 0.006243] [   13.925345] systemd[1]: Reached target Swap.
+[18.482659 0.004501] [   13.929793] systemd[1]: Starting Root Slice.
+[18.487411 0.004752] [  OK  ] Created slice Root Slice.
+[18.494286 0.006875] [   13.941380] systemd[1]: Created slice Root Slice.
+[18.499191 0.004905] [   13.946273] systemd[1]: Starting User and Session Slice.
+[18.505413 0.006222] [  OK  ] Created slice User and Session Slice.
+[18.518319 0.012906] [   13.965378] systemd[1]: Created slice User and Session Slice.
+[18.524159 0.005840] [   13.971345] systemd[1]: Starting /dev/initctl Compatibility Named Pipe.
+[18.531418 0.007259] [  OK  ] Listening on /dev/initctl Compatibility Named Pipe.
+[18.542356 0.010938] [   13.989380] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[18.549418 0.007062] [   13.996544] systemd[1]: Starting Delayed Shutdown Socket.
+[18.555311 0.005893] [  OK  ] Listening on Delayed Shutdown Socket.
+[18.562289 0.006978] [   14.009360] systemd[1]: Listening on Delayed Shutdown Socket.
+[18.568160 0.005871] [   14.015305] systemd[1]: Starting Journal Socket (/dev/log).
+[18.574293 0.006133] [  OK  ] Listening on Journal Socket (/dev/log).
+[18.582290 0.007997] [   14.029386] systemd[1]: Listening on Journal Socket (/dev/log).
+[18.588411 0.006121] [   14.035548] systemd[1]: Starting udev Control Socket.
+[18.593907 0.005496] [  OK  ] Listening on udev Control Socket.
+[18.602292 0.008385] [   14.049366] systemd[1]: Listening on udev Control Socket.
+[18.607910 0.005618] [   14.054992] systemd[1]: Starting udev Kernel Socket.
+[18.613293 0.005383] [  OK  ] Listening on udev Kernel Socket.
+[18.618160 0.004867] [   14.065357] systemd[1]: Listening on udev Kernel Socket.
+[18.623785 0.005625] [   14.070900] systemd[1]: Starting Journal Socket.
+[18.628909 0.005124] [  OK  ] Listening on Journal Socket.
+[18.634294 0.005385] [   14.081362] systemd[1]: Listening on Journal Socket.
+[18.639546 0.005252] [   14.086653] systemd[1]: Starting System Slice.
+[18.645056 0.005510] [  OK  ] Created slice System Slice.
+[18.650308 0.005252] [   14.097417] systemd[1]: Created slice System Slice.
+[18.655534 0.005226] [   14.102644] systemd[1]: Starting File System Check on Root Device...
+[18.662283 0.006749]          Starting File System Check on Root Device...
+[18.673550 0.011267] [   14.120720] systemd[1]: Starting system-getty.slice.
+[18.687050 0.013500] [  OK  ] Created slice system-getty.slice.
+[18.694557 0.007507] [   14.141654] systemd[1]: Created slice system-getty.slice.
+[18.703614 0.009057] [   14.150609] systemd[1]: Starting system-serial\x2dgetty.slice.
+[18.717069 0.013455] [  OK  ] Created slice system-serial\x2dgetty.slice.
+[18.730426 0.013357] [   14.177520] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[18.737414 0.006988] [   14.184515] systemd[1]: Starting Increase datagram queue length...
+[18.745924 0.008510]          Starting Increase datagram queue length...
+[18.753754 0.007830] [   14.200823] systemd[1]: Starting udev Coldplug all Devices...
+[18.770489 0.016735]          Starting udev Coldplug all Devices...
+[18.853757 0.083268] [   14.300743] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+[18.863672 0.009915]          Starting Create list of required static device nodes...rrent ker[   14.316002] systemd[1]: Mounted Huge Pages File System.
+[18.875420 0.011748] nel...
+[18.898096 0.022676] [   14.345133] systemd[1]: Mounting POSIX Message Queue File System...
+[18.927052 0.028956]          Mounting POSIX Message Queue File System...
+[18.974055 0.047003] [   14.421193] systemd[1]: Starting Load Kernel Modules...
+[19.002315 0.028260]          Starting Load Kernel Modules...
+[19.059065 0.056750] [   14.506135] systemd[1]: Started Set Up Additional Binary Formats.
+[19.066425 0.007360] [   14.513590] systemd[1]: Starting Slices.
+[19.075426 0.009001] [  OK  ] Reached target Slices.
+[19.079098 0.003672] [   14.522751] systemd[1]: Reached target Slices.
+[19.089944 0.010846] [  OK  ] Mounted POSIX Message Queue File System.
+[19.095184 0.005240] [   14.537337] systemd[1]: Mounted POSIX Message Queue File System.
+[19.112319 0.017135] [  OK  ] Started Increase datagram queue length.
+[19.118549 0.006230] [   14.565674] systemd[1]: Started Increase datagram queue length.
+[19.128936 0.010387] [  OK  ] Started File System Check on Root Device.
+[19.142455 0.013519] [   14.589523] systemd[1]: Started File System Check on Root Device.
+[19.166254 0.023799] [  OK  ] Started Create list of required static device nodes ...current kernel.
+[19.178557 0.012303] [   14.625706] systemd[1]: Started Create list of required static device nodes for the current kernel.
+[19.201330 0.022773] [  OK  ] Started Load Kernel Modules.
+[19.210567 0.009237] [   14.657733] systemd[1]: Started Load Kernel Modules.
+[19.301465 0.090898] [  OK  ] Started udev Coldplug all Devices.
+[19.314311 0.012846] [   14.761437] systemd[1]: Started udev Coldplug all Devices.
+[19.474561 0.160250] [   14.921693] systemd[1]: Mounting Configuration File System...
+[19.480802 0.006241]          Mounting Configuration File System...
+[19.490322 0.009520] [   14.937459] systemd[1]: Starting Apply Kernel Variables...
+[19.503201 0.012879]          Starting Apply Kernel Variables...
+[19.518627 0.015426] [   14.965675] systemd[1]: Mounting FUSE Control File System...
+[19.530334 0.011707]          Mounting FUSE Control File System...
+[19.553060 0.022726] [   15.000168] systemd[1]: Starting Create Static Device Nodes in /dev...
+[19.578819 0.025759]          Starting Create Static Device Nodes in /dev...
+[19.590203 0.011384] [   15.037212] systemd[1]: Starting Syslog Socket.
+[19.600827 0.010624] [  OK  ] Listening on Syslog Socket.
+[19.610577 0.009750] [   15.057735] systemd[1]: Listening on Syslog Socket.
+[19.618576 0.007999] [   15.065664] systemd[1]: Starting Journal Service...
+[19.624429 0.005853]          Starting Journal Service...
+[19.634688 0.010259] [  OK  ] Started Journal Service.
+[19.641559 0.006871] [   15.088755] systemd[1]: Started Journal Service.
+[19.669106 0.027547] [  OK  ] Mounted FUSE Control File System.
+[19.675699 0.006593] [  OK  ] Mounted Configuration File System.
+[19.691064 0.015365] [  OK  ] Started Apply Kernel Variables.
+[19.734606 0.043542] [  OK  ] Started Create Static Device Nodes in /dev.
+[19.907327 0.172721] [   15.292797] systemd-fsck[157]: BOOT: clean, 139800/240000 files, 871699/958208 blocks
+[19.943080 0.035753]          Starting udev Kernel Device Manager...
+[19.985562 0.042482] [   15.432614] systemd-udevd[197]: starting version 215
+[19.991704 0.006142] [  OK  ] Started udev Kernel Device Manager.
+[20.013089 0.021385]          Starting Copy rules generated while the root was ro...
+[20.038585 0.025496]          Starting LSB: Tune IDE hard disks...
+[20.081722 0.043137]          Starting LSB: Set preliminary keymap...
+[20.118953 0.037231] [  OK  ] Started Copy rules generated while the root was ro.
+[20.167330 0.048377] [  OK  ] Started LSB: Set preliminary keymap.
+[20.298205 0.130875] [  OK  ] Started LSB: Tune IDE hard disks.
+[20.389177 0.090972]          Starting Remount Root and Kernel File Systems...
+[20.475587 0.086410] [   15.922782] EXT4-fs (mmcblk0p1): re-mounted. Opts: errors=remount-ro
+[20.495969 0.020382] [  OK  ] Started Remount Root and Kernel File Systems.
+[20.538977 0.043008]          Starting Load/Save Random Seed...
+[20.564533 0.025556] [  OK  ] Reached target Local File Systems (Pre).
+[20.577345 0.012812]          Mounting /sys/kernel/debug...
+[20.626354 0.049009] [  OK  ] Started Load/Save Random Seed.
+[20.662332 0.035978] [  OK  ] Mounted /sys/kernel/debug.
+[20.772117 0.109785] [  OK  ] Reached target Local File Systems.
+[20.778957 0.006840]          Starting Create Volatile Files and Directories...
+[20.811972 0.033015] [  OK  ] Reached target Remote File Systems.
+[20.818964 0.006992]          Starting Trigger Flushing of Journal to Persistent Storage...
+[20.854244 0.035280]          Starting LSB: Set console font and keymap...
+[20.896337 0.042093]          Starting LSB: Raise network interfaces....
+[20.946350 0.050013] [  OK  ] Started LSB: Set console font and keymap.
+[20.957023 0.010673] [  OK  ] Started Create Volatile Files and Directories.
+[21.156256 0.199233] [   16.603449] systemd-journald[194]: Received request to flush runtime journal from PID 1
+[21.210267 0.054011] [  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
+[21.362985 0.152718]          Starting Network Time Synchronization...
+[21.410639 0.047654]          Starting Update UTMP about System Boot/Shutdown...
+[21.619052 0.208413] [  OK  ] Started Update UTMP about System Boot/Shutdown.
+[21.633259 0.014207] [  OK  ] Started Network Time Synchronization.
+[21.781240 0.147981] [  OK  ] Reached target System Time Synchronized.
+[21.797364 0.016124] [  OK  ] Found device /dev/ttyS0.
+[21.997326 0.199962] [  OK  ] Started LSB: Raise network interfaces..
+[22.038109 0.040783] [   17.485341] random: nonblocking pool is initialized
+[22.046476 0.008367] [  OK  ] Reached target System Initialization.
+[22.059113 0.012637] [  OK  ] Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+[22.071246 0.012133] [  OK  ] Listening on bonescript.socket.
+[22.083238 0.011992] [  OK  ] Listening on cloud9.socket.
+[22.095248 0.012010] [  OK  ] Listening on node-red.socket.
+[22.107113 0.011865] [  OK  ] Listening on D-Bus System Message Bus Socket.
+[22.118850 0.011737] [  OK  ] Reached target Sockets.
+[22.130989 0.012139] [  OK  ] Reached target Timers.
+[22.143116 0.012127]          Starting Restore Sound Card State...
+[22.171242 0.028126] [  OK  ] Reached target Basic System.
+[22.182851 0.011609]          Starting Entropy daemon using the HAVEGE algorithm...
+[22.206232 0.023381] [  OK  ] Started Entropy daemon using the HAVEGE algorithm.
+[22.219268 0.013036]          Starting Regular background program processing daemon...
+[22.270214 0.050946] [  OK  ] Started Regular background program processing daemon.
+[22.286235 0.016021]          Starting Restore /etc/resolv.conf if the system cras...s shut down....
+[22.334495 0.048260]          Starting Generic Board Startup...
+[22.374439 0.039944]          Starting Bonescript autorun...
+[22.406136 0.031697] [  OK  ] Started Bonescript autorun.
+[22.422113 0.015977]          Starting Cape Manager Service...
+[22.475381 0.053268]          Starting Login Service...
+[22.535831 0.060450]          Starting LSB: Start daemon at boot time...
+[22.568279 0.032448]          Starting LSB: Load kernel modules needed to enable cpufreq scaling...
+[22.671407 0.103128]          Starting LSB: Start busybox udhcpd at boot time...
+[22.739339 0.067932]          Starting Avahi mDNS/DNS-SD Stack...
+[22.817759 0.078420]          Starting D-Bus System Message Bus...
+[22.871527 0.053768] [  OK  ] Started D-Bus System Message Bus.
+[23.489489 0.617962] [  OK  ] Started Avahi mDNS/DNS-SD Stack.
+[23.495751 0.006262]          Starting Connection service...
+[23.545780 0.050029]          Starting System Logging Service...
+[23.650210 0.104430]          Starting Permit User Sessions...
+[23.847622 0.197412] [  OK  ] Started Restore Sound Card State.
+[23.889553 0.041931] [[  OK  ] Started Restore /etc/resolv.conf if the system crash...was shut down..[  OK  ] Started Cape Manager Service.
+[23.973039 0.083486] [  OK  ] Started LSB: Start daemon at boot time.
+[24.010277 0.037238] [  OK  ] Started LSB: Start busybox udhcpd at boot time.
+[24.042272 0.031995] [  OK  ] Started Permit User Sessions.
+[24.066019 0.023747] [  OK  ] Started System Logging Service.
+[24.394260 0.328241] [  OK  ] Started LSB: Load kernel modules needed to enable cpufreq scaling.
+[24.670498 0.276238] [   20.117789] tda998x 0-0070: found TDA19988
+[24.715158 0.044660] [   20.162569] tilcdc 4830e000.lcdc: bound 0-0070 (ops tda998x_ops [tda998x])
+[24.855732 0.140574] [   20.303118] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[24.862400 0.006668] [   20.309896] [drm] No driver support for vblank timestamp query.
+[25.101632 0.239232] [   20.549003] using random self ethernet address
+[25.106154 0.004522] [   20.553630] using random host ethernet address
+[25.145308 0.039154] [   20.592779] using host ethernet address: 68:C9:0B:DA:07:70
+[25.151030 0.005722] [   20.598245] using self ethernet address: 68:C9:0B:DA:07:61[   20.735723] Mass Storage Function, version: 2009/09/11
+[25.310831 0.159801] [   20.758234] LUN: removable file: (no medium)
+[25.346315 0.035484] [   20.793693] LUN: removable file: /var/cache/doc-beaglebone-getting-started/beaglebone-getting-started-2015-12-04.img
+[25.356909 0.010594] [   20.804352] Number of LUNs=1
+[25.422087 0.065178] [   20.869457] net eth0: initializing cpsw version 1.12 (0)
+[25.458278 0.036191] [   20.905641] net eth0: phy found : id is : 0x7c0f1
+[25.512439 0.054161] [   20.959870] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[25.519545 0.007106] [   20.966982] usb0: HOST MAC 68:c9:0b:da:07:70
+[25.542044 0.022499] [   20.989555] usb0: MAC 68:c9:0b:da:07:61
+[25.562210 0.020166] [   21.009643] g_multi gadget: Multifunction Composite Gadget
+[25.567786 0.005576] [   21.015230] g_multi gadget: g_multi ready
+[25.618338 0.050552] [   21.065777] tilcdc 4830e000.lcdc: No connectors reported connected with modes
+[25.848770 0.230432] [  OK  ] Started Connection service.
+[25.927145 0.078375] [  OK  ] Started Login Service.
+[25.945054 0.017909]          Starting Hostname Service...
+[25.982192 0.037138] [   21.429474] [drm] Cannot find any crtc or sizes - going 1024x768
+[26.014344 0.032152]          Starting WPA supplicant...
+[26.072975 0.058631]          Starting Wait for network to be configured by ConnMan...
+[26.142085 0.069110]          Starting LSB: set CPUFreq kernel parameters...
+[26.216366 0.074281]          Starting Light Display Manager...
+[26.409674 0.193308] [   21.857095] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+[26.843038 0.433364] [   22.193891] Console: switching to colour frame buffer device 128x48
+[26.982111 0.139073] [   22.429485] tilcdc 4830e000.lcdc: fb0:  frame buffer device
+[27.005241 0.023130] [   22.436911] [drm] Initialized tilcdc 1.0.0 20121205 on minor 0
+[27.038992 0.033751] [   22.438426] omap_rng 48310000.rng: OMAP Random Number Generator ver. 20
+[27.079577 0.040585] [   22.442430] ti-pruss 4a300000.pruss: creating PRU cores and other child platform devices
+[27.124918 0.045341] [   22.461980] omap-sham 53100000.sham: hw accel on OMAP rev 4.3
+[27.153863 0.028945] [   22.495642]  remoteproc1: 4a334000.pru0 is available
+[27.180774 0.026911] [   22.495647]  remoteproc1: Note: remoteproc is still under development and considered experimental.
+[27.232627 0.051853] [   22.495651]  remoteproc1: THE BINARY FORMAT IS NOT YET FINALIZED, and backward compatibility isn't yet guaranteed.
+[27.290011 0.057384] [   22.499622]  remoteproc1: Direct firmware load for am335x-pru0-fw failed with error -2
+[27.334994 0.044983] [   22.499636]  remoteproc1: failed to load am335x-pru0-fw
+[27.371615 0.036621] [   22.562452] pru-rproc 4a334000.pru0: booting the PRU core manually
+[27.406334 0.034719] [   22.562461]  remoteproc1: powering up 4a334000.pru0
+[27.431457 0.025123] [   22.562530]  remoteproc1: Direct firmware load for am335x-pru0-fw failed with error -2
+[27.477900 0.046443] [   22.562540]  remoteproc1: request_firmware failed: -2
+[27.503098 0.025198] [   22.562545] pru-rproc 4a334000.pru0: rproc_boot failed
+[27.535083 0.031985] [   22.562661]  remoteproc1: releasing 4a334000.pru0
+[27.557597 0.022514] [   22.562793] pru-rproc: probe of 4a334000.pru0 failed with error -2
+[27.589667 0.032070] [   22.563125]  remoteproc1: 4a338000.pru1 is available
+[27.618084 0.028417] [   22.563130]  remoteproc1: Note: remoteproc is still under development and considered experimental.
+[27.683632 0.065548] [   22.563133]  remoteproc1: THE BINARY FORMAT IS NOT YET FINALIZED, and backward compatibility isn't yet guaranteed.
+[27.748495 0.064863] [   22.563350]  remoteproc1: Direct firmware load for am335x-pru1-fw failed with error -2
+[27.801129 0.052634] [   22.563358]  remoteproc1: failed to load am335x-pru1-fw
+[27.831472 0.030343] [   22.571326] pru-rproc 4a338000.pru1: booting the PRU core manually
+[27.865859 0.034387] [   22.571335]  remoteproc1: powering up 4a338000.pru1
+[27.888215 0.022356] [   22.571404]  remoteproc1: Direct firmware load for am335x-pru1-fw failed with error -2
+[27.929266 0.041051] [   22.571413]  remoteproc1: request_firmware failed: -2
+[27.956977 0.027711] [   22.571419] pru-rproc 4a338000.pru1: rproc_boot failed
+[27.987140 0.030163] [   22.571532]  remoteproc1: releasing 4a338000.pru1
+[28.017886 0.030746] [   22.571657] pru-rproc: probe of 4a338000.pru1 failed with error -2
+[28.051383 0.033497] [   22.589720] omap-aes 53500000.aes: OMAP AES hw accel rev: 3.2
+[28.083840 0.032457] [  OK  ] Started LSB: set CPUFreq kernel parameters.
+[28.217846 0.134006] [  OK  ] Started WPA supplicant.
+[28.386056 0.168210] [  OK  ] Started Hostname Service.
+[28.474529 0.088473] [   23.922051] cpsw 4a100000.ethernet eth0: Link is Up - 100Mbps/Full - flow control rx/tx
+[28.524477 0.049948] [   23.972128] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[28.578760 0.054283] [   24.026342] asoc-simple-card sound: i2s-hifi <-> 48038000.mcasp mapping ok
+[28.599642 0.020882] [  OK  ] Started Light Display Manager.
+[28.714624 0.114982] [   24.162199] 8021q: 802.1Q VLAN Support v1.8
+[28.746986 0.032362] [   24.194584] 8021q: adding VLAN 0 to HW filter on device eth0
+[29.120922 0.373936] [  OK  ] Reached target Network.
+[29.136872 0.015950]          Starting OpenBSD Secure Shell server...
+[29.327475 0.190603] [  OK  ] Started OpenBSD Secure Shell server.
+[29.353878 0.026403]          Starting /etc/rc.local Compatibility...
+[29.513877 0.159999] [  OK  ] Started /etc/rc.local Compatibility.
+[29.537995 0.024118] [  OK  ] Started Wait for network to be configured by ConnMan.
+[29.966281 0.428286]          Stopping LSB: Start busybox udhcpd at boot time...
+[30.009906 0.043625] [  OK  ] Reached target Sound Card.
+[30.021146 0.011240] [  OK  ] Reached target Network is Online.
+[30.034782 0.013636]          Starting LSB: Apache2 web server...
+[30.085923 0.051141]          Starting LSB: Advanced IEEE 802.11 management daemon...
+[30.154907 0.068984]          Starting Getty on tty1...
+[30.213795 0.058888] [  OK  ] Started Getty on tty1.
+[30.233895 0.020100]          Starting Serial Getty on ttyS0...
+[30.272628 0.038733] [  OK  ] Started Serial Getty on ttyS0.
+[30.290151 0.017523] [  OK  ] Reached target Login Prompts.
+[30.416903 0.126752] [  OK  ] Stopped LSB: Start busybox udhcpd at boot time.
+[30.441903 0.025000] [  OK  ] Started LSB: Advanced IEEE 802.11 management daemon.
+[30.962272 0.520369]          Starting LSB: Start busybox udhcpd at boot time...
+[31.149518 0.187246] [  OK  ] Started LSB: Start busybox udhcpd at boot time.
+[31.310897 0.161379]          Starting Serial Getty on ttyGS0...
+[31.346401 0.035504] [  OK  ] Started Serial Getty on ttyGS0.
+[32.890680 1.544279] [   28.338424] bone_capemgr bone_capemgr: part_number 'cape-universaln', version 'N/A'
+[32.936692 0.046012] [   28.384443] bone_capemgr bone_capemgr: slot #4: override
+[32.942177 0.005485] [   28.389902] bone_capemgr bone_capemgr: Using override eeprom data at slot 4
+[32.949173 0.006996] [   28.396951] bone_capemgr bone_capemgr: slot #4: 'Override Board Name,00A0,Override Manuf,cape-universaln'
+[33.598203 0.649030] [   29.045871] gpio-of-helper ocp:cape-universal: Allocated GPIO id=0
+[33.645969 0.047766] [   29.093772] gpio-of-helper ocp:cape-universal: Allocated GPIO id=1
+[33.683947 0.037978] [   29.131804] gpio-of-helper ocp:cape-universal: Allocated GPIO id=2
+[33.737696 0.053749] [   29.185579] gpio-of-helper ocp:cape-universal: Allocated GPIO id=3
+[33.789822 0.052126] [   29.237718] gpio-of-helper ocp:cape-universal: Allocated GPIO id=4
+[33.832323 0.042501] [   29.280243] gpio-of-helper ocp:cape-universal: Allocated GPIO id=5
+[33.881863 0.049540] [   29.329696] gpio-of-helper ocp:cape-universal: Allocated GPIO id=6
+[33.922980 0.041117] [   29.370847] gpio-of-helper ocp:cape-universal: Allocated GPIO id=7
+[33.961200 0.038220] [   29.409036] gpio-of-helper ocp:cape-universal: Allocated GPIO id=8
+[33.997858 0.036658] [   29.445730] gpio-of-helper ocp:cape-universal: Allocated GPIO id=9
+[34.029826 0.031968] [   29.477754] gpio-of-helper ocp:cape-universal: Allocated GPIO id=10
+[34.069707 0.039881] [   29.517595] gpio-of-helper ocp:cape-universal: Allocated GPIO id=11
+[34.107702 0.037995] [   29.555565] gpio-of-helper ocp:cape-universal: Allocated GPIO id=12
+[34.141828 0.034126] [   29.589727] gpio-of-helper ocp:cape-universal: Allocated GPIO id=13
+[34.181738 0.039910] [   29.629646] gpio-of-helper ocp:cape-universal: Allocated GPIO id=14
+[34.217901 0.036163] [   29.665688] gpio-of-helper ocp:cape-universal: Allocated GPIO id=15
+[34.249834 0.031933] [   29.697718] gpio-of-helper ocp:cape-universal: Allocated GPIO id=16
+[34.289882 0.040048] [   29.737729] gpio-of-helper ocp:cape-universal: Allocated GPIO id=17
+[34.325711 0.035829] [   29.773636] gpio-of-helper ocp:cape-universal: Allocated GPIO id=18
+[34.349894 0.024183] [   29.797698] gpio-of-helper ocp:cape-universal: Allocated GPIO id=19
+[34.413936 0.064042] [   29.861694] gpio-of-helper ocp:cape-universal: Allocated GPIO id=20
+[34.457838 0.043902] [   29.905749] gpio-of-helper ocp:cape-universal: Allocated GPIO id=21
+[34.508481 0.050643] [  OK  ] Created slice user-1000.slice.
+[34.512755 0.004274] [   29.956728] gpio-of-helper ocp:cape-universal: Allocated GPIO id=22
+[34.557589 0.044834]          Starting User Manager for UID 1000...
+[34.589840 0.032251] [   30.037764] gpio-of-helper ocp:cape-universal: Allocated GPIO id=23
+[34.649589 0.059749] [   30.097498] gpio-of-helper ocp:cape-universal: Allocated GPIO id=24
+[34.691841 0.042252] [   30.139702] gpio-of-helper ocp:cape-universal: Allocated GPIO id=25
+[34.740217 0.048376] [   30.188101] gpio-of-helper ocp:cape-universal: Allocated GPIO id=26
+[34.768880 0.028663] [   30.216768] gpio-of-helper ocp:cape-universal: Allocated GPIO id=27
+[34.805667 0.036787] [   30.253479] gpio-of-helper ocp:cape-universal: Allocated GPIO id=28
+[34.851222 0.045555] [  OK  ] Started LSB: Apache2 web server.
+[34.855761 0.004539] [   30.299402] gpio-of-helper ocp:cape-universal: Allocated GPIO id=29
+[34.911991 0.056230] [   30.359857] gpio-of-helper ocp:cape-universal: Allocated GPIO id=30
+[34.941480 0.029489] [   30.389436] gpio-of-helper ocp:cape-universal: Allocated GPIO id=31
+[34.972876 0.031396] [  OK  ] Started User Manager for UID 1000.
+[34.980219 0.007343] [   30.428051] gpio-of-helper ocp:cape-universal: Allocated GPIO id=32
+[34.986600 0.006381] [   30.434481] gpio-of-helper ocp:cape-universal: ready
+[35.069724 0.083124] [   30.517659] 48022000.serial: ttyS1 at MMIO 0x48022000 (irq = 199, base_baud = 3000000) is a 8250
+[35.141883 0.072159] [   30.589733] 48024000.serial: ttyS2 at MMIO 0x48024000 (irq = 200, base_baud = 3000000) is a 8250
+[35.208273 0.066390] [   30.656047] 481a8000.serial: ttyS4 at MMIO 0x481a8000 (irq = 201, base_baud = 3000000) is a 8250
+[35.357890 0.149617] [   30.805791] platform 48300180.eqep: Cannot lookup hwmod 'eqep0'
+[35.420285 0.062395] [   30.868152] platform 48302180.eqep: Cannot lookup hwmod 'eqep1'
+[35.487263 0.066978] [   30.935090] platform 48304180.eqep: Cannot lookup hwmod 'eqep2'
+[35.552229 0.064966] [   31.000110] omap_i2c 4802a000.i2c: bus 1 rev0.11 at 100 kHz
+[35.601193 0.048964] [   31.049014] bone_capemgr bone_capemgr: slot #4: dtbo 'cape-universaln-00A0.dtbo' loaded; overlay id #0
+[35.742394 0.141201] [   31.190373] eqep 48300180.eqep: ver. 1.0
+[35.846647 0.104253] [   31.294515] eqep 48300180.eqep: failed to get clock
+[35.944364 0.097717] [   31.392291] CAN device driver interface
+[35.983294 0.038930] [   31.431114] eqep: probe of 48300180.eqep failed with error -2
+[36.121944 0.138650] [   31.569804] c_can_platform 481cc000.can: c_can_platform device registered (regs=fa1cc000, irq=208)
+[36.177741 0.055797] [   31.625715] eqep 48302180.eqep: ver. 1.0
+[36.215009 0.037268] [   31.662850] eqep 48302180.eqep: failed to get clock
+[36.258264 0.043255] [   31.706145] eqep: probe of 48302180.eqep failed with error -2
+[36.293527 0.035263] [   31.741487] c_can_platform 481d0000.can: c_can_platform device registered (regs=fa1d0000, irq=209)
+[36.334653 0.041126] [   31.782608] eqep 48304180.eqep: ver. 1.0
+[36.370692 0.036039] 
+[36.377530 0.006838] Debian GNU/Linux 8 beaglebone ttyS0
+[36.380860 0.003330] 
+[36.380921 0.000061] BeagleBoard.org Debian Image 2016-05-13
+[36.384609 0.003688] 
+[36.384659 0.000050] Support/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+[36.390611 0.005952] 
+[36.390738 0.000127] default username:password is [debian:temppwd]
+[36.394886 0.004148] 
+[36.394989 0.000103] The IP Address for eth0 is: 192.168.1.31
+[36.398738 0.003749] The IP Address for usb0 is: 192.168.7.2
+[36.407751 0.009013] [   31.855744] eqep 48304180.eqep: failed to get clock
+[36.413241 0.005490] beaglebone login: [   31.941668] eqep: probe of 48304180.eqep failed with error -2
+dainius@server:~$ 
+
