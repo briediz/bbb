@@ -1,0 +1,102 @@
+U-Boot SPL 2015.01-00001-gb2412df (Jan 29 2015 - 15:01:06)                      
+                                                                                
+                                                                                
+U-Boot 2015.01-00001-gb2412df (Jan 29 2015 - 15:01:06), Build: jenkins-github_B5
+                                                                                
+       Watchdog enabled                                                         
+I2C:   ready                                                                    
+DRAM:  512 MiB                                                                  
+MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1                                           
+Using default environment                                                       
+                                                                                
+Net:   <ethaddr> not set. Validating first E-fuse MAC                           
+cpsw                                                                            
+Hit any key to stop autoboot:  0                                                
+U-Boot#                           printenv                                      
+arch=arm                                                                        
+autoconf=off                                                                    
+baudrate=115200                                                                 
+board=am335x                                                                    
+board_name=A335BNLT                                                             
+board_rev=00C0                                                                  
+boot_fdt=try                                                                    
+bootcmd=setenv umsmedia 0; gpio set 53; i2c mw 0x24 1 0x3e; run findfdt; setenv;
+bootcount=4                                                                     
+bootdelay=1                                                                     
+bootenv=uEnv.txt                                                                
+bootfile=zImage                                                                 
+bootm_size=0x10000000                                                           
+bootpart=0:2                                                                    
+bootscript=echo Running bootscript from mmc${bootpart} ...; source ${loadaddr}  
+console=ttyO0,115200n8                                                          
+cpu=armv7                                                                       
+device=eth0                                                                     
+dfu_alt_info_emmc=rawemmc raw 0 3751936                                         
+dfu_alt_info_mmc=boot part 0 1;rootfs part 0 2;MLO fat 0 1;MLO.raw raw 0x100 0x1
+dfu_alt_info_ram=kernel ram 0x80200000 0xD80000;fdt ram 0x80F80000 0x80000;ramd0
+eth1addr=68:c9:0b:da:07:70                                                      
+ethact=cpsw                                                                     
+ethaddr=68:c9:0b:da:07:6e                                                       
+failumsboot=echo; echo FAILSAFE: U-Boot UMS (USB Mass Storage) enabled, media n;
+fdt_addr_r=0x88000000                                                           
+fdtaddr=0x88000000                                                              
+fdtdir=/dtbs                                                                    
+fdtfile=undefined                                                               
+findfdt=if test $board_name = A335BONE; then setenv fdtfile am335x-bone.dtb; se 
+gw_ip=192.168.1.1                                                               
+importbootenv=echo Importing environment from mmc ...; env import -t -r $loadade
+kernel_addr_r=0x82000000                                                        
+loadaddr=0x82000000                                                             
+loadbootenv=load mmc ${bootpart} ${loadaddr} ${bootenv}                         
+loadbootscript=load mmc ${bootpart} ${loadaddr} ${scriptfile};                  
+loadfdt=echo loading ${fdtdir}/${fdtfile} ...; load mmc ${bootpart} ${fdtaddr} }
+loadimage=load mmc ${bootpart} ${loadaddr} ${bootdir}/${bootfile}               
+loadramdisk=load mmc ${mmcdev} ${rdaddr} ramdisk.gz                             
+loadrd=load mmc ${bootpart} ${rdaddr} ${bootdir}/${rdfile}; setenv rdsize ${fil}
+mmcargs=setenv bootargs console=${console} ${optargs} ${cape_disable} ${cape_en}
+mmcboot=mmc dev ${mmcdev}; if mmc rescan; then gpio set 54;setenv bootpart ${mm;
+mmcdev=0                                                                        
+mmcloados=run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; the;
+mmcpart=1                                                                       
+mmcroot=/dev/mmcblk0p2 ro                                                       
+mmcrootfstype=ext4 rootwait fixrtc                                              
+netargs=setenv bootargs console=${console} ${optargs} root=/dev/nfs nfsroot=${sp
+netboot=echo Booting from network ...; setenv autoload no; dhcp; tftp ${loadadd}
+netmask=255.255.255.0                                                           
+nfs_options=,vers=3                                                             
+nfsargs=setenv bootargs console=${console} ${optargs} ${cape_disable} ${cape_en}
+nfsboot=echo Booting from ${server_ip} ...; setenv nfsroot ${server_ip}:${root_}
+nfsboot_uname_r=echo Booting from ${server_ip} ...; setenv nfsroot ${server_ip}}
+nfsopts=nolock                                                                  
+nfsrootfstype=ext4 rootwait fixrtc                                              
+partitions=uuid_disk=${uuid_gpt_disk};name=rootfs,start=2MiB,size=-,uuid=${uuid}
+ramargs=setenv bootargs console=${console} ${optargs} root=${ramroot} rootfstyp}
+ramboot=echo Booting from ramdisk ...; run ramargs; bootz ${loadaddr} ${rdaddr}}
+ramdisk_addr_r=0x88080000                                                       
+ramroot=/dev/ram0 rw                                                            
+ramrootfstype=ext2                                                              
+rdaddr=0x88080000                                                               
+root_dir=/home/userid/targetNFS                                                 
+rootpath=/export/rootfs                                                         
+script=boot.scr                                                                 
+scriptfile=${script}                                                            
+server_ip=192.168.1.100                                                         
+soc=am33xx                                                                      
+spiargs=setenv bootargs console=${console} ${optargs} root=${spiroot} rootfstyp}
+spiboot=echo Booting from spi ...; run spiargs; sf probe ${spibusno}:0; sf read}
+spibusno=0                                                                      
+spiimgsize=0x362000                                                             
+spiroot=/dev/mtdblock4 rw                                                       
+spirootfstype=jffs2                                                             
+spisrcaddr=0xe0000                                                              
+static_ip=${ipaddr}:${serverip}:${gatewayip}:${netmask}:${hostname}::off        
+stderr=serial_omap                                                              
+stdin=serial_omap                                                               
+stdout=serial_omap                                                              
+uname_boot=setenv bootdir /boot; setenv bootfile vmlinuz-${uname_r}; if test -e;
+vendor=ti                                                                       
+ver=U-Boot 2015.01-00001-gb2412df (Jan 29 2015 - 15:01:06)                      
+                                                                                
+Environment size: 8778/131068 bytes                                             
+U-Boot# 
+
